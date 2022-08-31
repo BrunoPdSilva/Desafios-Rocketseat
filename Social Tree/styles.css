@@ -1,0 +1,106 @@
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.outlined img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--purple);
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+div.container {
+  height: 100vh;
+  width: 100%;
+
+  margin-top: 207px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.outlined {
+  height: 213px;
+  width: 213px;
+  border-radius: 50%;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #bb99dd;
+}
+
+div p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--purple);
+
+  margin-bottom: 33px;
+}
+
+div li {
+  height: 49px;
+  width: 326px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #bb99dd;
+  border-radius: 4px;
+
+  margin-bottom: 16px;
+}
+
+div.icons {
+  width: 236px;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 52px;
+}
+
+@media (max-width: 500px) {
+  div.container {
+    margin-top: 120px;
+  }
+}
