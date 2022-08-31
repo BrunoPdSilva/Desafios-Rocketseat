@@ -1,0 +1,166 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #121214;
+}
+
+div.content {
+  width: 50%;
+  z-index: 1;
+}
+
+div .logo img {
+  width: 389px;
+  height: 94px;
+
+  margin: 50px 0 92px 30px;
+}
+
+div .main-text {
+  width: 647px;
+  height: 102px;
+
+  margin: 0 36px 50px;
+}
+
+div .main-text h2 {
+  width: 517px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Work Sans", sans-serif;
+  line-height: 28.15px;
+
+  color: var(--title-color);
+
+  margin-bottom: 8.56px;
+}
+
+div .main-text h3 {
+  width: 517px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  margin-bottom: 9px;
+}
+
+div .main-text p {
+  width: 647px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "League Spartan", sans-serif;
+  line-height: 19px;
+  letter-spacing: 0.7px;
+
+  color: var(--form-color);
+}
+
+form {
+  height: 84px;
+  width: 798px;
+
+  margin-left: 36px;
+  margin-bottom: 50px;
+}
+
+form p {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  line-height: 138.73%;
+
+  color: var(--form-color);
+}
+
+form input {
+  height: 48px;
+  width: 750px;
+
+  margin: 17px 0;
+  padding: 17px 10px;
+
+  border: none;
+  border-left: 5px solid var(--title-color);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  font-family: "Work Sans";
+}
+
+div.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+div.input-container i {
+  height: 48px;
+  width: 48px;
+
+  background-color: #8257e5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+div.link {
+  height: 24px;
+  width: 250px;
+  
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+div.link a {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+
+  color: var(--bg-button-color);
+
+  margin-left: 36px;
+  margin-right: 5px;
+
+  text-decoration: none;
+}
+
+div.bg-img {
+  height: 100vh;
+  width: 50%;
+
+  /* background: url(./assets/read_news.jpg);
+  background-size: cover;
+ */
+  z-index: 0;
+}
+
+div.bg-img img {
+  z-index: 0;
+
+  height: 100%;
+  width: 100%;
+}
