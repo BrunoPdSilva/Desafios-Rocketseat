@@ -7,35 +7,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-html,
-body {
   background-color: var(--body-bg-color);
   font-family: "Poppins", sans-serif;
-}
 
-.outlined img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-
-a {
   font-size: 16px;
-  font-weight: 600;
   color: var(--purple);
-
-  text-decoration: none;
-  cursor: pointer;
-}
-
-i {
-  cursor: pointer;
 }
 
 ul {
   list-style: none;
+}
+
+i,
+li {
+  cursor: pointer;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 div.container {
@@ -58,7 +49,6 @@ div.user {
 div.outlined {
   height: 213px;
   width: 213px;
-  border-radius: 50%;
 
   margin-bottom: 15px;
 
@@ -67,13 +57,18 @@ div.outlined {
   align-items: center;
 
   border: 2px solid #bb99dd;
+  border-radius: 50%;
+}
+
+.outlined img {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
 }
 
 div p {
-  font-size: 16px;
   font-weight: 300;
-  color: var(--purple);
-
   margin-bottom: 33px;
 }
 
@@ -81,22 +76,23 @@ div li {
   height: 49px;
   width: 326px;
 
+  margin-bottom: 16px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   border: 2px solid #bb99dd;
   border-radius: 4px;
-
-  margin-bottom: 16px;
 }
 
 div.icons {
   width: 236px;
 
+  margin-top: 52px;
+
   display: flex;
   justify-content: space-between;
-  margin-top: 52px;
 }
 
 @media (max-width: 500px) {
