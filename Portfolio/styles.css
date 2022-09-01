@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+html {
+  font-family: "Merriweather Sans", sans-serif;
+
+  background-color: var(--body-bg-color);
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.body-container {
+  margin: 4rem;
+  display: flex;
+}
+
+div.user {
+  width: 34.8rem;
+  height: 29.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--bg-cards);
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+div.user img {
+  height: 12.8rem;
+  width: 12.8rem;
+
+  margin: 3.2rem 0 3rem;
+
+  border-radius: 50%;
+  border: 2px solid #00ff00;
+}
+
+div.user h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+
+  margin-bottom: 1rem;
+}
+
+div.user span {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+div.main-content {
+  height: 8.6rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-left: 6rem;
+
+  background-color: var(--bg-cards);
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.myProjects {
+  padding: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.myProjects h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+div.myProjects span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+div.cards-container {
+  display: flex;
+  gap: 3rem;
+}
+
+div.card {
+  height: 18.6rem;
+  
+  flex: 1;
+
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
