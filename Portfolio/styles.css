@@ -17,14 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 body,
 html {
+  width: 100%;
+  height: 100%;
+
+  color: var(--text-color);
   font-family: "Merriweather Sans", sans-serif;
 
   background-color: var(--body-bg-color);
@@ -42,6 +40,12 @@ a {
 div.body-container {
   margin: 4rem;
   display: flex;
+}
+
+div.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 div.user {
@@ -71,51 +75,190 @@ div.user img {
 div.user h1 {
   font-size: 2.3rem;
   font-weight: 700;
-  color: var(--text-color);
 
   margin-bottom: 1rem;
 }
 
 div.user span {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 300;
-  color: var(--text-color);
 }
 
-div.main-content {
-  height: 8.6rem;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-
-  margin-left: 6rem;
+div.links {
+  height: 36.7rem;
+  width: 34.8rem;
 
   background-color: var(--bg-cards);
-
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
-.myProjects {
+div.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin: 3rem 9.8rem 3rem 4rem;
+}
+
+div.links ul li {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+div.links span {
+  margin-left: 2rem;
+}
+
+div.technologies {
+  height: 20.8rem;
+  width: 34.8rem;
+
+  padding: 3rem 0 3rem 2rem;
+
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+div.technologies h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+
+  margin-bottom: 2rem;
+}
+
+div.technologies ul {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+
+  margin-left: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+div.technologies ul li {
+  height: 2.4rem;
+  width: 8.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #cb92b1;
+  border-radius: 30px;
+}
+
+div.experiences {
+  height: 42.5rem;
+  width: 34.8rem;
+
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+div.experiences ul {
+  list-style: disc;
+}
+
+div.experiences li {
+  margin: 2rem 0 0 6.3rem;
+}
+
+div.experiences h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+div.experiences h3 {
+  font-size: 1.4rem;
+}
+
+div.experiences span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 18px;
+}
+
+div.education {
+  height: 42.5rem;
+  width: 34.8rem;
+
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+div.education ul {
+  list-style: disc;
+}
+
+div.education li {
+  margin: 2rem 0 0 6.3rem;
+}
+
+div.education h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+div.education h3 {
+  font-size: 1.4rem;
+}
+
+div.education span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 18px;
+}
+
+div.main-content {
+  width: 100%;
+  margin-left: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sectionCard {
+  height: 8.6rem;
   padding: 3rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
-div.myProjects h2 {
+div.sectionCard h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--text-color);
 }
 
-div.myProjects span {
+div.sectionCard span {
   font-size: 1.4rem;
   font-weight: 400;
-  color: var(--text-color);
 }
 
 div.cards-container {
@@ -125,10 +268,131 @@ div.cards-container {
 
 div.card {
   height: 18.6rem;
-  
+
+  padding: 3rem 1rem 3rem 3rem;
+
   flex: 1;
 
   background-color: var(--bg-cards);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+}
+
+div.card header {
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+div.card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+div.card span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+div.card main {
+  margin-top: 2.6rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+div.card .icons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+div.icon {
+  display: flex;
+  align-items: center;
+}
+
+div.card i {
+  margin-right: 0.8rem;
+}
+
+div.card .language {
+  margin-right: 3rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+div.card .circle {
+  height: 1.5rem;
+  width: 1.5rem;
+
+  border-radius: 50%;
+  background: #e7de79;
+  border: 2px solid #837e9f;
+}
+
+div.post-container {
+  height: 20.1rem;
+  width: 100%;
+
+  display: flex;
+
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+div.post-container img {
+  height: 12.8rem;
+  width: 12.8rem;
+
+  margin-top: 3rem;
+  margin-inline: 3rem 2rem;
+
+  border-radius: 50%;
+}
+
+div.post-content {
+  margin-top: 3rem;
+}
+
+div.post-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+
+  margin-bottom: 0.9rem;
+}
+
+div.post-content span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+
+  margin-bottom: 2.8rem;
+}
+
+div.post-content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  margin-top: 2.8rem;
+}
+
+div.post-content ul {
+  margin-top: 1.1rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+div.post-content li {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
 }
