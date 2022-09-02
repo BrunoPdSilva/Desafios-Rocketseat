@@ -37,6 +37,12 @@ a {
   text-decoration: none;
 }
 
+.card-style {
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
 div.body-container {
   margin: 4rem;
   display: flex;
@@ -55,11 +61,7 @@ div.user {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: var(--bg-cards);
-
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  
 }
 
 div.user img {
@@ -87,10 +89,6 @@ div.user span {
 div.links {
   height: 36.7rem;
   width: 34.8rem;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.links ul {
@@ -98,20 +96,17 @@ div.links ul {
   flex-direction: column;
   gap: 2rem;
 
-  margin: 3rem 9.8rem 3rem 4rem;
+  margin: 3rem 0 3rem 4rem;
 }
 
 div.links ul li {
   display: flex;
   align-items: center;
+  gap: 2rem;
 
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.6rem;
-}
-
-div.links span {
-  margin-left: 2rem;
 }
 
 div.technologies {
@@ -119,10 +114,6 @@ div.technologies {
   width: 34.8rem;
 
   padding: 3rem 0 3rem 2rem;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.technologies h2 {
@@ -160,10 +151,6 @@ div.technologies ul li {
 div.experiences {
   height: 42.5rem;
   width: 34.8rem;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.experiences ul {
@@ -196,10 +183,6 @@ div.experiences span {
 div.education {
   height: 42.5rem;
   width: 34.8rem;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.education ul {
@@ -245,10 +228,6 @@ div.main-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.sectionCard h2 {
@@ -272,10 +251,6 @@ div.card {
   padding: 3rem 1rem 3rem 3rem;
 
   flex: 1;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.card header {
@@ -340,10 +315,6 @@ div.post-container {
   width: 100%;
 
   display: flex;
-
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
 }
 
 div.post-container img {
