@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Coming Soon!</title>
-  </head>
-  <body>
-    <header class="top-background"></header>
 
-    <main>
-      <div class="left-container">
-        <h2>READY TO LAUNCH IN...</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Coming Soon!</title>
+</head>
 
-        <ul class="clock-info">
-          <li>Dias</li>
-          <li>Horas</li>
-          <li>Minutos</li>
-          <li>Segundos</li>
-        </ul>
+<body>
+  <header class="top-background"></header>
 
-        <ul class="clock">
-          <li id="days">08</li>
-          <span>:</span>
-          <li id="hours">12</li>
-          <span>:</span>
-          <li id="minutes">44</li>
-          <span>:</span>
-          <li id="seconds">28</li>
-        </ul>
+  <main>
+    <div class="main-container">
+      <h2 class="title">READY TO LAUNCH IN...</h2>
 
+      <div class="clock-container">
+        <div class="unit-container">
+          <h3>Dias</h3>
+          <div>
+            <p id="days">00</p>
+            <span>:</span>
+          </div>
+        </div>
+
+        <div class="unit-container">
+          <h3>Horas</h3>
+          <div>
+            <p id="hours">00</p>
+            <span>:</span>
+          </div>
+        </div>
+
+        <div class="unit-container">
+          <h3>Minutos</h3>
+          <div>
+            <p id="minutes">00</p>
+            <span>:</span>
+          </div>
+        </div>
+
+        <div class="unit-container">
+          <h3>Segundos</h3>
+          <div>
+            <p id="seconds">11</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe-container">
         <span class="subscribe">Inscreva-se para saber mais sobre o lançamento</span>
         <button>Inscreva-se</button>
-
       </div>
-      
-      <div class="right-container">
-        <img src="./images/rocket.svg" alt="Rocket">
-      </div>
-    </main>
 
-    <footer class="bottom-background"></footer>
+    </div>
+
+    <div class="image-container">
+      <img src="./images/rocket.svg" alt="Rocket">
+    </div>
+  </main>
+
+  <footer class="bottom-background"></footer>
 
     <script src="./app.js"></script>
-  </body>
+
+</body>
+
 </html>
