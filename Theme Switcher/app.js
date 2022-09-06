@@ -13,6 +13,8 @@ const lightTheme = {
   "--label": "#111"
 };
 
+window.onload = getTheme();
+
 function changeTheme(theme) {
   for (let prop in theme) {
     changeProperty(prop, theme[prop]);
@@ -21,11 +23,30 @@ function changeTheme(theme) {
   for (let [prop, value] of Object.entries(theme)){
     changeProperty(prop, value);
   }
+  saveTheme(theme);
 }
 
 function changeProperty(key, value) {
   root.style.setProperty(key, value);
 }
+
+function saveTheme(theme) {
+  localStorage.setItem("theme", JSON.stringify(theme));
+}
+
+function getTheme() {
+  const theme = JSON.parse(localStorage.getItem('theme'));
+  if (isThemeEqual(theme, darkTheme)) checkbox.checked = true;
+  changeTheme(theme);
+}
+
+function isThemeEqual(firstTheme, secondTheme) {
+  for (let prop in firstTheme) {
+    if(firstTheme[prop] != secondTheme[prop]) return true;
+  }
+  return false
+}
+
 
 checkbox.addEventListener('change', ({ target }) => 
   target.checked ? changeTheme(lightTheme) : changeTheme(darkTheme)
