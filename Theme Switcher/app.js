@@ -1,16 +1,32 @@
-const body = document.querySelector("body");
+const root = document.documentElement;
 const checkbox = document.querySelector('input[type="checkbox"]');
 
-function switchLight() {
-  body.classList.remove("dark-mode");
-  body.classList.add("light-mode");
+const darkTheme = {
+  "--background": "#292c35",
+  "--text": "#f1f1f1",
+  "--label": "#111"
 }
 
-function switchDark() {
-  body.classList.remove("light-mode");
-  body.classList.add("dark-mode");
+const lightTheme = {
+  "--background": "#f1f1f1",
+  "--text": "#292c35",
+  "--label": "#111"
+};
+
+function changeTheme(theme) {
+  for (let prop in theme) {
+    changeProperty(prop, theme[prop]);
+  }
+
+  for (let [prop, value] of Object.entries(theme)){
+    changeProperty(prop, value);
+  }
 }
 
-checkbox.addEventListener("change", ({ target }) => {
-  target.checked ? switchLight() : switchDark();
-});
+function changeProperty(key, value) {
+  root.style.setProperty(key, value);
+}
+
+checkbox.addEventListener('change', ({ target }) => 
+  target.checked ? changeTheme(lightTheme) : changeTheme(darkTheme)
+)

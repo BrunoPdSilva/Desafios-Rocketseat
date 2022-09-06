@@ -1,6 +1,6 @@
 :root {
-  --dark: #292c35;
-  --light: #f1f1f1;
+  --background: #292c35;
+  --text: #f1f1f1;
   --label: #111;
 }
 
@@ -20,12 +20,11 @@ body {
   align-items: center;
 }
 
-.dark-mode {
-  background-color: var(--dark);
-}
+h1 {
+  margin-bottom: 26px;
 
-.light-mode {
-  background-color: var(--light);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main img {
@@ -62,7 +61,7 @@ label::after {
   height: 86.31px;
   width: 86.31px;
 
-  background-color: var(--light);
+  background-color: #f1f1f1;
   border-radius: 50%;
 
   position: absolute;
