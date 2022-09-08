@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Desafio - Login Form</title>
+</head>
+
+<body>
+  <section>
+    <header>
+      <img src="./images/logo.svg" alt="Site logo">
+    </header>
+
+    <main>
+      <form>
+
+        <header>
+          <div>
+            <i><img src="./images/log-in.svg" alt="log-in icon"></i>
+            <h1>Faça seu login</h1>
+          </div>
+          <span>Entre com suas informações de cadastro.</span>
+        </header>
+
+        <label>
+          <span>E-mail</span>
+          <div class="input-container">
+            <i><img src="./images/mail.svg" alt="Mail icon"></i>
+            <i><img src="./images/mail-focus.svg" alt="Mail focus"></i>
+            <input type="text" placeholder="Digite seu e-mail">
+          </div>
+        </label>
+
+        <label>
+          <span>Senha</span>
+          <div class="input-container">
+            <i><img src="./images/lock.svg" alt="Lock icon"></i>
+            <i><img src="./images/lock-focus.svg" alt="Lock focus"></i>
+            <input type="text" placeholder="Digite sua senha">
+            <button type="checkbox"><img src="./images/eye.svg" alt="Eye icon"></button>
+          </div>
+        </label>
+
+        <section>
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <label id="checkbox-label" for="checkbox">
+            <i id="check-icon"><img src="./images/check.svg" alt=""></i>
+          </label>
+          <p>Lembre-me</p>
+          <a>Esqueci minha senha</a>
+        </section>
+
+        <button class="login-btn">ENTRAR</button>
+
+        <a href="#" class="signup">Não tem uma conta? <span>Registre-se</span></a>
+
+      </form>
+    </main>
+  </section>
+
+  <picture class="background-img">
+    <source media="(min-width: 768px)" srcset="./images/side-image-2x.jpg">
+    <source media="(max-width: 768px)" srcset="./images/side-image.jpg">
+
+    <img src="./images/side-image.jpg" alt="Side image">
+  </picture>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+
+  font-size: 62.5%;
+
+  --webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--background);
+
+  display: flex;
+  overflow: hidden;
+}
+
+section {
+  flex: 1;
+}
+
+section > header img {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+main {
+  margin-top: 5.18rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+main form {
+  width: 57.2rem;
+  height: 51.2rem;
+
+  padding: 5.5rem 11.9rem 0rem 11.9rem;
+
+  background-color: var(--form-background);
+}
+
+main form header {
+  margin-bottom: 2.7rem;
+}
+
+main form header div {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 0.5rem;
+}
+
+main form header div h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  font-family: "Poppins";
+  color: var(--text-title);
+
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+main form header span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-family: "Roboto";
+  color: var(--text-base);
+}
+
+main form label .input-container:focus-within {
+  border: 1px solid #ffc632;
+  box-shadow: 0px 0px 0px 2px #ffde88;
+  border-radius: 4px;
+}
+
+main form label > span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-family: "Poppins";
+  color: var(--text-base);
+
+  padding-bottom: 0.5rem;
+}
+
+main form label .input-container {
+  width: 33.5rem;
+  height: 4.4rem;
+
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+main form label .input-container i:nth-child(2) {
+  display: none;
+}
+
+main form label .input-container:focus-within i:nth-child(2) {
+  display: inline;
+}
+
+main form label .input-container:focus-within i:nth-child(1) {
+  display: none;
+}
+
+main form label .input-container input {
+  width: 33.5rem;
+  height: 4.4rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  font-family: "Roboto";
+  color: #a9afb9;
+
+  padding-left: 0.5rem;
+  padding-bottom: 0.1rem;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+main form label .input-container button {
+  background: none;
+  border: none;
+
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+form section {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+form #checkbox-label {
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid #868686;
+  border-radius: 4px;
+
+  position: relative;
+}
+
+form #checkbox-label i {
+  display: none;
+}
+
+form #checkbox:checked + #checkbox-label {
+  background-color: var(--primary-color);
+}
+
+form #checkbox:checked + #checkbox-label i {
+  display: inline;
+  user-select: none;
+}
+
+form input[type="checkbox"] {
+  visibility: hidden;
+
+  position: absolute;
+  top: 0;
+}
+
+form section p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  font-family: "Roboto";
+  color: #a9afb9;
+
+  margin-left: 0.5rem;
+  margin-right: 7.5rem;
+}
+
+form section a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  font-family: "Poppins";
+  color: var(--primary-color);
+
+  cursor: pointer;
+  padding-top: 0.2rem;
+}
+
+button.login-btn {
+  width: 33.4rem;
+  height: 5.1rem;
+
+  margin-bottom: 1.4rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  letter-spacing: 0.015em;
+  color: #473404;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--primary-color);
+  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+}
+
+form a.signup {
+  margin-left: 4.8rem;
+
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: var(--primary-color);
+
+  text-decoration: none;
+}
+
+form a.signup span {
+  font-weight: 600;
+}
+
+/* main form section label {
+  width: 2rem;
+  height: 2rem;
+
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+.background-img img {
+  width: 72rem;
+  height: 100%;
+
+  user-select: none;
+}
