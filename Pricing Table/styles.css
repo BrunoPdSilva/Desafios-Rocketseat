@@ -3,20 +3,329 @@
   --blue: #1d539e;
   --gray: #828799;
   --page-background: #f9fbfc;
+  --white: #FFFFFF;
+  --price: #1e2338;
+
+  font-size: 62.5%;
+  font-family: "Open Sans";
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-size: 62.5%;
-  font-family: 'Open Sans';
 }
 
-html, body {
+html,
+body {
   width: 100vw;
   height: 100vh;
 
   background-color: var(--page-background);
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header::before {
+  content: "";
+
+  width: 100%;
+  height: 45rem;
+
+  background-color: var(--blue);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.title {
+  width: 55.3rem;
+  height: 6.5rem;
+
+  text-align: center;
+  margin-top: 10rem;
+
+  z-index: 0;
+}
+
+.title h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--white);
+
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+main {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card:nth-child(2) {
+  margin-top: 13.5rem;
+  height: 49rem;
+}
+
+.card:nth-child(2) .card-header {
+  height: 7.6rem;
+
+  padding-inline: 3rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--yellow);
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 8px 8px 0px 0px;
+}
+
+#popular-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue);
+
+  margin-left: 0;
+}
+
+.popular-tag {
+  width: 9.4rem;
+  height: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--blue);
+  border-radius: 40px;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+.card:nth-child(2) .price p {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: var(--price);
+
+  margin-right: 0.5rem;
+}
+
+.price h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray);
+
+  padding-bottom: 0.5rem;
+}
+
+p.card-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--gray);
+
+  padding-bottom: 2rem;
+  margin: 1rem 3rem 2rem 3rem;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card:nth-child(2) li span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.card:nth-child(2) button {
+  width: 29.6rem;
+  height: 5.1rem;
+
+  margin: 1rem 3rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+
+  background-color: var(--blue);
+  border-radius: 10px;
+  border: none;
+}
+
+.card {
+  width: 35.5rem;
+  height: 47rem;
+
+  background-color: var(--white);
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 8px;
+  margin-top: 14.5rem;
+
+  position: relative;
+  z-index: 0;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--price);
+
+  margin: 3rem 0 2rem 3rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.card .price p {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--price);
+
+  margin-right: 0.5rem;
+}
+
+.card ul {
+  list-style: none;
+  margin-left: 3.1rem;
+}
+
+.card li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  margin-bottom: 1.7rem;
+}
+
+.card li span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.card button {
+  width: 29.6rem;
+  height: 5.1rem;
+
+  margin: 0 3rem;
+  position: absolute;
+  bottom: 3rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--blue);
+
+  border: 1px solid #1d539e;
+  border-radius: 10px;
+}
+
+@media (max-width: 1050px) {
+  :root {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 970px) {
+  :root {
+    font-size: 45%;
+  }
+
+  button {
+    width: 83%;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 43%;
+  }
+
+  main {
+    gap: 1.8rem;
+    justify-content: center;
+  }
+
+  .card button,
+  .card:nth-child(2) button {
+    width: 83%;
+  }
+}
+
+@media (max-width: 650px) {
+  
+  :root {
+    font-size: 40%;
+  }
+
+  .card ul {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 590px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card:nth-child(1) {
+    margin-top: 14.5rem;
+  }
+
+  .card,
+  div.card.popular {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .button-container {
+    width: 100%;
+    height: 10rem;
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .button-container button {
+    position: relative;
+  }
+}
+
+@media (max-width: 370px) {
+  :root {
+    font-size: 35%;
+  }
+  /* .title h1 {
+    font-size: 4rem;
+  }
+
+  .title h2 {
+    font-size: 1.8rem;
+  } */
 }
