@@ -256,27 +256,105 @@ form a.signup span {
   font-weight: 600;
 }
 
-/* main form section label {
-  width: 2rem;
-  height: 2rem;
-
-  border: 1px solid #868686;
-  border-radius: 4px;
-}
-
-input[type="checkbox"] {
-  height: 0;
-  width: 0;
-
-  visibility: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-} */
-
 .background-img img {
   width: 72rem;
   height: 100%;
 
   user-select: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 2559px) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1760px) {
+  :root {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1338px) {
+  :root {
+    font-size: 60%;
+  }
+  .background-img img {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 58%;
+  }
+
+  .background-img img {
+    width: 45rem;
+    height: 100%;
+    user-select: none;
+  }
+}
+
+@media (max-width: 977px) {
+  :root {
+    font-size: 50%;
+  }
+
+  .background-img img {
+    display: none;
+  }
+}
+
+@media (max-width: 834px) {
+  .background-img img {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-img img {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+    display: flexx;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  html, body {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    font-size: 50%;
+  }
+
+  main {
+    width: 100vw;
+    display: flexx;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 376px) {
+  :root {
+    font-size: 48%;
+  }
+
+  main {
+    width: 100vw;
+    margin-top: 0;
+  }
+
+  main form {
+    background-color: var(--background);
+  }
 }
