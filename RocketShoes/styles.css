@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --black: #000;
+  --text-description: #9c9696;
+
+  font-size: 62.5%;
+  font-family: "Roboto";
+
+  background-color: var(--background);
+
+  --webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+  display: relative;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7rem;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  color: var(--black);
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  color: var(--black);
+}
+
+p {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.7rem;
+  color: var(--black);
+}
+
+span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+  color: var(--text-description);
+}
+
+header {
+  width: 100vw;
+
+  margin-top: 3.9rem;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header nav {
+  width: 132rem;
+
+  display: flex;
+}
+
+header nav i {
+  height: 3.6rem;
+
+  margin-block: 0.5rem;
+}
+
+header nav ul {
+  margin-inline: 11.4rem 8.2rem;
+
+  display: flex;
+  gap: 9rem;
+
+  list-style: none;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+header nav .input-container {
+  width: 22rem;
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+header nav .input-container button {
+  margin-inline: 1.3rem 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header nav .input-container input {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  color: var(--text-description);
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+header nav a {
+  height: 3.4rem;
+
+  margin-block: 0.6rem;
+  margin-left: auto;
+}
+
+main {
+  display: flex;
+}
+
+main .content-section {
+  flex: 54rem;
+}
+
+main .content-section .price-container {
+  width: 35.7rem;
+  height: 27.2rem;
+
+  margin-top: 19rem;
+  margin-left: 11.1rem;
+}
+
+main .content-section .price-container h1 {
+  margin-bottom: 2.1rem;
+}
+
+main .content-section .price-container p {
+  margin-block: 2.1rem 3rem;
+}
+
+main .content-section .price-container button {
+  width: 27.4rem;
+  height: 9rem;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  color: #ffffff;
+
+  background-color: var(--button);
+  border: none;
+}
+
+main .img-section {
+  height: 91.4rem;
+  width: 90rem;
+
+  background-color: var(--main-background);
+}
+
+main .img-section .main-image {
+  margin: 17.40rem 14.6rem 0 15.7rem;
+}
+
+main .img-section .images {
+  margin-inline: 1.8rem;
+
+  display: flex;
+  gap: 3.7rem;
+}
+
+main .selected {
+  border-bottom: 5px solid #ff0000;
+}
+
+footer {
+  width: 100%;
+  height: 16.633rem;
+
+  display: flex;
+}
+
+footer div.video {
+  width: 25rem;
+  height: 100%;
+
+  margin-right: 4.7rem;
+
+  background-color: #000;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  list-style: none;
+}
+
+footer .explore {
+  width: 43.7rem;
+  height: 100%;
+
+  margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+footer .explore h3 {
+  color: #FFFFFF;
+
+  margin-right: 1.4rem;
+}
