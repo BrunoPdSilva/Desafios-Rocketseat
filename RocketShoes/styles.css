@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --button: #ff0000;
   --main-background: #c4c4c4;
   --background: #e5e5e5;
-  --black: #000;
   --text-description: #9c9696;
+  --button: #ff0000;
+  --black: #000;
 
   font-size: 62.5%;
   font-family: "Roboto";
@@ -19,41 +19,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  color: var(--black);
+  list-style: none;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-
+  height: 100%;
   overflow-x: hidden;
   display: relative;
 }
 
 h1 {
   font-size: 6rem;
-  font-weight: 700;
   line-height: 7rem;
-  color: var(--black);
+}
+
+p.price {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.7rem;
 }
 
 h2 {
   font-size: 2.4rem;
-  font-weight: 700;
   line-height: 2.8rem;
-  color: var(--black);
 }
 
 h3 {
   font-size: 1.8rem;
-  font-weight: 700;
   line-height: 2.1rem;
-  color: var(--black);
 }
 
-p {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 4.7rem;
+a {
+  text-decoration: none;
   color: var(--black);
 }
 
@@ -65,27 +64,19 @@ span {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
 
-  margin-top: 3.9rem;
+  padding-top: 3.9rem;
   display: flex;
   justify-content: center;
 
   position: absolute;
   top: 0;
-  left: 0;
 }
 
 header nav {
   width: 132rem;
-
   display: flex;
-}
-
-header nav i {
-  height: 3.6rem;
-
-  margin-block: 0.5rem;
 }
 
 header nav ul {
@@ -93,12 +84,11 @@ header nav ul {
 
   display: flex;
   gap: 9rem;
-
-  list-style: none;
 }
 
-header nav ul li {
+li {
   cursor: pointer;
+  height: 0.8rem;
 }
 
 header nav .input-container {
@@ -123,6 +113,7 @@ header nav .input-container button {
 }
 
 header nav .input-container input {
+  width: 17rem;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.1rem;
@@ -136,11 +127,13 @@ header nav .input-container input {
 header nav a {
   height: 3.4rem;
 
+  transition: 0.3s;
   margin-block: 0.6rem;
   margin-left: auto;
 }
 
 main {
+  width: 100%;
   display: flex;
 }
 
@@ -174,34 +167,55 @@ main .content-section .price-container button {
   color: #ffffff;
 
   background-color: var(--button);
+  border-radius: 6px;
   border: none;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+main .content-section .price-container button:hover {
+  background-color: #b40303;
 }
 
 main .img-section {
   height: 91.4rem;
-  width: 90rem;
+  width: 93rem;
 
   background-color: var(--main-background);
 }
 
 main .img-section .main-image {
-  margin: 17.40rem 14.6rem 0 15.7rem;
+  margin: 17.4rem 14.6rem 0 15.7rem;
 }
 
 main .img-section .images {
   margin-inline: 1.8rem;
 
   display: flex;
+  justify-content: center;
   gap: 3.7rem;
+  cursor: pointer;
 }
 
-main .selected {
-  border-bottom: 5px solid #ff0000;
+main .img-section .images img {
+  height: 18.28rem;
+  width: 40%;
 }
+
+main .img-section .images img:hover {
+  box-sizing: content-box;
+  border-bottom: 5px solid #ff0000;
+
+  transition: 0.5s ease;
+}
+
+/* main .selected {
+  border-bottom: 5px solid #ff0000;
+} */
 
 footer {
   width: 100%;
-  height: 16.633rem;
 
   display: flex;
 }
@@ -210,23 +224,30 @@ footer div.video {
   width: 25rem;
   height: 100%;
 
-  margin-right: 4.7rem;
-
   background-color: #000;
 }
 
 footer ul {
+  width: 100%;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 9rem;
-  list-style: none;
+}
+
+footer li {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s ease-out;
 }
 
 footer .explore {
-  width: 43.7rem;
-  height: 100%;
-
-  margin-left: auto;
+  width: 70.7rem;
 
   display: flex;
   justify-content: center;
@@ -234,10 +255,43 @@ footer .explore {
 
   background-color: var(--black);
   cursor: pointer;
+
+  transition: 0.3s ease-out;
 }
 
 footer .explore h3 {
-  color: #FFFFFF;
-
+  color: #ffffff;
   margin-right: 1.4rem;
+}
+
+header nav a :hover {
+  transition: 0.3s;
+  transform: scale(1.08);
+  color: rgb(69, 69, 69);
+}
+
+footer ul li:nth-child(-n + 4):hover {
+  background-color: rgb(69, 69, 69);
+}
+
+footer ul li:nth-child(-n + 4):hover h3 {
+  color: white;
+}
+
+footer .explore:hover {
+  background-color: rgb(4, 4, 4);
+}
+
+footer .explore:hover i {
+  transition: 0.3s;
+  animation: toRightArrow 0.5s both;
+}
+
+@keyframes toRightArrow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
 }
