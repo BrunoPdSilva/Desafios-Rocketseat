@@ -91,17 +91,17 @@ header nav {
   width: 93%;
   
   display: flex;
-  justify-content: space-between;
 }
 
 header nav ul {
+  margin-inline: 15rem 8.2rem;
+
   display: flex;
   gap: 9rem;
 }
 
 header nav .input-container {
   width: 22rem;
-  height: 4.6rem;
 
   display: flex;
 
@@ -109,10 +109,10 @@ header nav .input-container {
 }
 
 header nav .input-container button {
+  margin-inline: 1.3rem 0.5rem;
+
   display: flex;
   align-items: center;
-
-  margin-inline: 1.3rem 0.5rem;
 
   background: none;
 }
@@ -131,6 +131,7 @@ header nav a {
 
   transition: 0.3s;
   margin-block: 0.6rem;
+  margin-left: 8rem;
 }
 
 header nav a :hover {
@@ -145,22 +146,6 @@ main {
 
 main .content-section {
   flex: 1;
-  min-width: 40rem;
-
-  display: flex;
-  justify-content: center;
-}
-
-main .img-section {
-  flex: 1.7;
-  height: 91.4rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--main-background);
 }
 
 main .content-section .price-container {
@@ -168,7 +153,7 @@ main .content-section .price-container {
   height: 27.2rem;
 
   margin-top: 19rem;
-  /* margin-left: 11.1rem; */
+  margin-left: 11.1rem;
 }
 
 main .content-section .price-container h1 {
@@ -195,16 +180,19 @@ main .content-section .price-container button:hover {
   background-color: #b40303;
 }
 
-main .main-image {
-  height: 59.7rem;
-  width: 51rem;
+main .img-section {
+  height: 91.4rem;
+  width: 93rem;
 
-  margin-top: 15rem;
+  background-color: var(--main-background);
+}
+
+main .img-section .main-image {
+  margin: 17.4rem 0 0 15.7rem;
 }
 
 main .img-section .images {
   margin-inline: 1.8rem;
-  margin-bottom: 2rem;
 
   display: flex;
   justify-content: center;
@@ -218,7 +206,8 @@ main .img-section .images img {
 }
 
 main .img-section .images img:hover {
-  box-shadow: 0 3px red;
+  box-sizing: content-box;
+  border-bottom: 4px solid #ff0000;
 
   transition: 0.41s ease;
 }
@@ -290,35 +279,12 @@ footer .explore:hover i {
   }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1070px) {
   :root {
     font-size: 55%;
   }
 
   footer .explore h3 {
-    margin-right: 0.5rem;
-  }
-
-  header nav ul {
-    gap: 5rem;
-  }
-
-  main .img-section {
-    width: 670px;
-  }
-  main .img-section .images img {
-    width: 22rem;
-  }
-
-}
-
-@media (max-width: 950px) {
-  :root {
-    font-size: 46%;
-  }
-
-  main .img-section {
-    width: 600px;
+    margin-right: 0;
   }
 }
-
