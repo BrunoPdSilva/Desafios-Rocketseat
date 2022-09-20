@@ -183,6 +183,11 @@ header main section:nth-child(2) {
   height: 34.6rem;
 }
 
+header main section:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+}
+
 main.content {
   width: 82%;
   margin: 0 auto;
@@ -260,9 +265,54 @@ main.content section:nth-child(2) div {
 }
 
 main.content section:nth-child(2) img {
+  width: 100%;
   margin-bottom: 1.597rem;
 }
 
 main.content section:nth-child(2) h2 {
   margin-block: 0.8rem;
+}
+
+@media (max-width: 1400px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1130px) {
+  :root {
+    font-size: 46%;
+  }
+
+  header nav {
+    width: 86%;
+  }
+
+  header main {
+    width: 86%;
+
+  }
+
+  main.content {
+    width: 86%;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 45%;
+  }
+
+  header nav {
+    width: 93%;
+  }
+
+  header main {
+    width: 93%;
+  }
+
+  main.content {
+    width: 93%;
+    flex-wrap: wrap;
+  }
 }
