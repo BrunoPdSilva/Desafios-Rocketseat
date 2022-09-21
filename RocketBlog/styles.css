@@ -53,6 +53,12 @@ header nav {
   align-items: center;
 }
 
+header nav .burguer-menu {
+  margin-top: 0.4rem;
+  background: none;
+  border: none;
+}
+
 header nav ul {
   display: flex;
   gap: 8%;
@@ -372,7 +378,7 @@ main.content section:nth-child(2) h2 {
   }
 }
 
-@media (max-width: 637px) {
+@media (max-width: 639px) {
   main.content section:nth-child(2) div {
     width: 93%;
   }
