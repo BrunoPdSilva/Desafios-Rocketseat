@@ -10,13 +10,14 @@
     <link rel="shortcut icon" href="./assets/virtual.png" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./mediaQueries.css">
   <title>Rocket Blog</title>
 </head>
 
 <body>
 
-  <header>
+  <header id="navHeader">
 
     <nav>
       <img class="logo-img" src="./assets/logo.svg" alt="RocketBlog Logo">
@@ -28,28 +29,33 @@
         <li class="list "><a href="#">Contato</a></li>
       </ul>
 
-      <div class="input-group">
-        <input placeholder="Buscar">
-        <button>
-          <i><img src="./assets/search.svg" alt="Icone de pesquisa"></i> 
+      <div class="input-menu">
+        <div class="input-group">
+          <input placeholder="Buscar">
+          <button>
+            <i><img src="./assets/search.svg" alt="Icone de pesquisa"></i> 
+          </button>
+        </div>
+  
+        <button class="burguer-menu">
+          <i>
+            <img src="./assets/menu-burger.svg" alt="Icone de menu">
+          </i>
         </button>
       </div>
-
-      <button class="burguer-menu">
-        <i>
-          <img src="./assets/menu-burger.svg" alt="Icone de menu">
-        </i>
-      </button>
     </nav>
 
-    <main>
+    <main class="header-content">
       <section>
         <h1>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
-        <span class="more">
-          <a href="#">Veja mais</a>
-          <i><img src="./assets/arrow-right.svg" alt="Icone de seta"></i>
-        </span>
+
+        <div class="more">
+          <a href="#">Veja mais
+            <img src="./assets/arrow-right.svg" alt="Icone de seta">
+          </a>
+        </div>
+        
       </section>
 
       <section>
@@ -106,7 +112,7 @@
     </section>
   </main>
 
-  <script src="./index.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>

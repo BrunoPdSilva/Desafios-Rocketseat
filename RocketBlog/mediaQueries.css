@@ -1,0 +1,185 @@
+@media (max-width: 1400px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1350px) {
+  :root {
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 1280px) {
+  :root {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1130px) {
+  :root {
+    font-size: 46%;
+  }
+
+  header nav {
+    width: 86%;
+  }
+
+  header main {
+    width: 86%;
+  }
+
+  main.content {
+    width: 86%;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 45%;
+  }
+
+  header nav {
+    width: 90%;
+  }
+
+  header main {
+    width: 90%;
+  }
+
+  main.content {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 910px) {
+  :root {
+    font-size: 40%;
+  }
+  
+  header nav {
+    width: 85%;
+  }
+
+  header main {
+    width: 85%;
+  }
+
+  main.content {
+    width: 85%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 880px) {
+  header nav .burguer-menu {
+    display: block;
+  }
+
+  .input-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .burguer-menu {
+    padding-top: 0.6rem;
+  }
+
+  header nav {
+    width: 77%;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header main {
+    flex-direction: column;
+  }
+
+  header main section:nth-child(1) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header main section:nth-child(2) {
+    width: 80%;
+    margin: 0 auto 6.9rem;
+  }
+
+  main.content section:nth-child(1) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main.content section .left-post {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+  }
+
+  main.content section .left-post img {
+    width: 93%;
+  }
+
+  main.content section .right-post {
+    width: 93%;
+    margin-top: 4.5rem;
+  }
+
+  main.content section:nth-child(2) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main.content section:nth-child(2) p {
+    margin-bottom: 5.1rem;
+  }
+}
+
+@media (max-width: 639px) {
+  header nav .burguer-menu {
+    display: block;
+  }
+
+  main.content section:nth-child(2) div {
+    width: 93%;
+  }
+
+  header nav div.input-group {
+    display: none;
+  }
+
+  main.content section:nth-child(2) div img {
+    width: 100%;
+    height: 34.2rem;
+  }
+
+  header main section:nth-child(2) {
+    margin-top: 6.9rem;
+    margin-bottom: 6.9rem;
+  }
+}
+
+@media (max-width: 470px) {
+  :root {
+    font-size: 38.9%;
+  }
+
+  header {
+    padding-top: 2.7rem;
+  }
+
+  header main section:nth-child(2) {
+    margin-top: 13rem;
+  }
+}
