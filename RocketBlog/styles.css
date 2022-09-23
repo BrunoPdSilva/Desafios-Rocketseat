@@ -28,6 +28,8 @@ body {
   background-color: var(--bg);
 }
 
+/* HEADER STYLES */
+
 header {
   width: 100%;
 
@@ -108,7 +110,7 @@ header nav div.input-group input::-webkit-input-placeholder {
 
 header nav div.input-group button {
   width: 7rem;
-  height: 4.4rem;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -119,6 +121,13 @@ header nav div.input-group button {
 
   border: none;
   border-radius: 0px 4px 4px 0px;
+
+  transition: 0.3s;
+}
+
+header nav div.input-group .search-icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 header nav .burguer-menu {
@@ -155,8 +164,20 @@ header main section p {
   margin-block: 1.6rem 2.6rem;
 }
 
+div.see-more {
+  display: flex;
+  align-items: center;
+
+  height: 2.7rem;
+  width: 12.2rem;
+}
+
 header main section a {
   height: 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   font-size: 1.8rem;
   font-weight: 700;
@@ -166,10 +187,11 @@ header main section a {
   position: relative;
 }
 
-header main section:nth-child(1) img {
+div.see-more .arrow-icon {
+  height: 2rem;
+  width: 2rem;
+
   margin-left: 0.8rem;
-  position: absolute;
-  top: 0;
 }
 
 header main section:nth-child(2) {
@@ -183,6 +205,8 @@ header main section:nth-child(2) img {
   width: 100%;
   height: 100%;
 }
+
+/* MAIN CONTENT STYLES */
 
 main.content {
   width: 82%;
@@ -266,6 +290,8 @@ main.content section:nth-child(2) h2 {
   margin-block: 0.8rem;
 }
 
+/* MOBILE MENU STYLES */
+
 header.active {
   display: flex;
   width: 100vw;
@@ -282,7 +308,7 @@ header.active ul {
 
   width: 80%;
 
-  top: 40rem;
+  top: 45rem;
   right: 50%;
   left: 50%;
 
@@ -290,7 +316,7 @@ header.active ul {
 }
 
 header.active ul li a {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 header.active nav .nav-active {
@@ -298,9 +324,11 @@ header.active nav .nav-active {
 }
 
 header.active .input-group {
+  height: 6.4rem;
+
   display: flex;
   position: absolute;
-  top: 15rem;
+  top: 20rem;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -312,4 +340,23 @@ header.active main.header-content {
 
 body.active {
   overflow: hidden;
+}
+
+/* EFFECTS */
+
+header nav .input-group button:hover {
+  filter: brightness(1.1);
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+main.content h2:hover {
+  filter: brightness(1.2);
+}
+
+main.content h2,
+main.content img {
+  cursor: pointer;
 }

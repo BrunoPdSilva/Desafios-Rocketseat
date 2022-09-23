@@ -63,7 +63,7 @@
   :root {
     font-size: 40%;
   }
-  
+
   header nav {
     width: 85%;
   }
@@ -83,7 +83,7 @@
     display: block;
   }
 
-  .input-menu {
+  .nav-itens {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -176,7 +176,7 @@
   }
 
   header {
-    padding-top: 2.7rem;
+    padding-top: 2.6rem;
   }
 
   header main section:nth-child(2) {

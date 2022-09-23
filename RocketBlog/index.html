@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/virtual.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/virtual.png" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
@@ -18,7 +18,6 @@
 <body>
 
   <header id="navHeader">
-
     <nav>
       <img class="logo-img" src="./assets/logo.svg" alt="RocketBlog Logo">
 
@@ -29,17 +28,17 @@
         <li class="list "><a href="#">Contato</a></li>
       </ul>
 
-      <div class="input-menu">
+      <div class="nav-itens">
         <div class="input-group">
           <input placeholder="Buscar">
           <button>
-            <i><img src="./assets/search.svg" alt="Icone de pesquisa"></i> 
+            <i><img class="search-icon" src="./assets/search.svg" alt="Icone de pesquisa"></i>
           </button>
         </div>
-  
+
         <button class="burguer-menu">
           <i>
-            <img src="./assets/menu-burger.svg" alt="Icone de menu">
+            <img class="menu-icon" src="./assets/menu-burger.svg" alt="Icone de menu">
           </i>
         </button>
       </div>
@@ -48,38 +47,48 @@
     <main class="header-content">
       <section>
         <h1>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed
+          volutpat aenean sit vitae, sed tristique placerat hac. </p>
 
-        <div class="more">
-          <a href="#">Veja mais
-            <img src="./assets/arrow-right.svg" alt="Icone de seta">
+        <div class="see-more">
+          <a href="#">
+            <span>Veja mais</span>
+            <img class="arrow-icon" src="./assets/arrow-right.svg" alt="Icone de seta">
           </a>
         </div>
         
+        <!-- <div class="see-more">
+          <a href="#">
+            <span>Veja mais</span>
+            <img class="arrow-icon" src="./assets/arrow-right.svg" alt="Icone de seta">
+          </a>
+        </div> -->
       </section>
 
       <section>
-        <img src="./assets/featured-image.png" alt="">
+        <img src="./assets/featured-image.png" alt="Imagem, computador com códigos">
       </section>
     </main>
-
   </header>
 
   <main class="content">
 
     <section>
       <div class="left-post">
-        <img src="./assets/post-1.png" alt="Poster Começando no React 2022">
+        <img src="./assets/post-1.png" alt="Post Começando no React 2022">
         <span>Janeiro 04, 2022</span>
         <h2>Começando no ReactJS em 2022</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed
+          volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit
+          vitae, sed tristique. Sed volutpat aenean.</p>
       </div>
-      
+
       <div class="right-post">
         <div class="post">
           <span>Janeiro 06, 2022</span>
           <h2>Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed
+            volutpat aenean sit vitae, sed tristique.</p>
         </div>
 
         <div class="post">
@@ -92,22 +101,25 @@
 
     <section>
       <div>
-        <img src="./assets/post-2.png" alt="Poster 10 dicas para conseguir a vaga desejada">
+        <img src="./assets/post-2.png" alt="Post 10 dicas para conseguir a vaga desejada">
         <span>Janeiro 04, 2022</span>
         <h2>10 dicas para conseguir a vaga desejada</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed
+          volutpat aenean sit vitae, sed tristique. </p>
       </div>
       <div>
-        <img src="./assets/post-3.png" alt="Poster Deixe seu código mais semântico com essas dicas">
+        <img src="./assets/post-3.png" alt="Post Deixe seu código mais semântico com essas dicas">
         <span>Janeiro 06, 2022</span>
         <h2>Deixe seu código mais semântico com essas dicas</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed
+          volutpat aenean sit vitae, sed tristique. </p>
       </div>
       <div>
-        <img src="./assets/post-4.png" alt="Poster Use essas dicas nas suas aplicações mobile">
+        <img src="./assets/post-4.png" alt="Post Use essas dicas nas suas aplicações mobile">
         <span>Janeiro 10, 2022</span>
         <h2>Use essas dicas nas suas aplicações mobile</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed
+          volutpat aenean sit vitae, sed tristique. </p>
       </div>
     </section>
   </main>
