@@ -5,6 +5,7 @@
   --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
 
   font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
@@ -14,7 +15,98 @@
   box-sizing: border-box;
 }
 
-html, body {
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6rem;
+  color: var(--title);
+
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--title);
+}
+
+p {
+  width: 42.3rem;
+
+  margin-block: 1.904rem 0;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--subtitle);
+}
+
+h3 {
+  width: 38.1rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  text-align: center;
+  color: var(--subtitle);
+}
+
+html,
+body {
   width: 100vw;
   height: 100vh;
+
+  background-image: var(--background);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  width: 8.724rem;
+  height: 6.293rem;
+
+  margin-block: 7.2rem 1rem;
+}
+
+img#filmPoster {
+  width: 17.1rem;
+  height: 24.377rem;
+}
+
+div#film {
+  margin-bottom: 3rem;
+
+  display: flex;
+}
+
+div#film .details-container {
+  margin-left: 3.4rem;
+}
+
+button {
+  width: 18.093rem;
+  height: 4.7rem;
+
+  margin-bottom: 2.6rem;
+
+  background: var(--bg-button);
+  border: 2px solid #1a1a1a;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+
+  margin-left: 1.7rem;
 }
