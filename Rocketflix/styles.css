@@ -54,10 +54,13 @@ h3 {
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   background-image: var(--background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
@@ -101,6 +104,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
 }
 
 button span {
