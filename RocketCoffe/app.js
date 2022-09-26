@@ -1,11 +1,17 @@
 const burgerMenu = document.querySelector('.burger-icon');
-const navLinks = document.querySelector('.nav-links');
+const ulLinks = document.querySelector('.nav-links');
 const linksList = document.querySelectorAll('.linksList')
 const main = document.querySelector('main');
 
 function openMenu() {
-  navLinks.classList.toggle('active');
+  ulLinks.classList.toggle('active');
   main.classList.toggle('hidden');
+
+  if(burgerMenu.attributes.src.value === './assets/menu-buguer-open.svg'){
+    burgerMenu.setAttribute('src', './assets/menu-buguer-close.svg');
+  } else if (burgerMenu.attributes.src.value === './assets/menu-buguer-close.svg'){
+    burgerMenu.setAttribute('src', './assets/menu-buguer-open.svg');
+  }
 }
 
 function activeLink() {
@@ -16,5 +22,4 @@ function activeLink() {
 }
 
 burgerMenu.addEventListener('click', openMenu);
-
 linksList.forEach(link => link.addEventListener('click', activeLink));

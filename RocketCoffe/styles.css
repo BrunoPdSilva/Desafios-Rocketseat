@@ -67,38 +67,40 @@ header nav .logo {
 
 header nav .burger-icon {
   width: 2.4rem;
-  height: 0.8rem;
+  height: 2.4rem;
 
-  margin-top: 1.2rem;
   margin-right: 5%;
+
+  z-index: 10;
 }
 
-ul.nav-links {
+header ul.nav-links {
   display: none;
 }
 
-ul li {
-  border-bottom: 1px solid #29292E;
-  padding-block: 1.6rem;
-  padding-left: 3rem;
-}
-
-ul li a {
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.5rem;
-  color: var(--text-color-menu-mobile);
-}
-
-ul.active {
+header ul.nav-links.active {
   display: block;
 }
 
-ul li.active {
+header ul.nav-links.active li {
+  border-bottom: 1px solid #29292E;
+  padding-block: 1.6rem;
+  padding-left: 3rem;
+
+  font-size: 1.8rem;
+  color: var(--text-color-menu-mobile);
+}
+
+header ul.nav-links.active li a {
+  font-size: 1.8rem;
+  color: var(--text-color-menu-mobile);
+}
+
+header ul.nav-links.active li.active {
   box-shadow: inset 5px 0 var(--button);
 }
 
-ul li.active a {
+header ul.nav-links.active li.active a {
   color: var(--text-color);
 }
 
@@ -113,12 +115,16 @@ main {
   position: relative;
 }
 
+main.hidden {
+  display: none;
+}
+
 main h2 {
   width: 37.3rem;
   margin-block: 8.8rem;
 }
 
-button.getCoffe {
+main button.getCoffe {
   font-size: 1.1rem;
   font-weight: 800;
   line-height: 1.5rem;
@@ -139,11 +145,11 @@ button.getCoffe {
   z-index: 10;
 }
 
-button.getCoffe:hover {
+main button.getCoffe:hover {
   background-color: var(--button);
 }
 
-button.getCoffe i {
+main button.getCoffe i {
   margin-left: 1rem;
   padding-top: 0.3rem;
 }
@@ -171,8 +177,4 @@ main .title h1:nth-child(2) {
   bottom: 0;
 
   transform: translateX(-50%);
-}
-
-main.hidden {
-  display: none;
 }
