@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   background-color: var(--bg-card);
 }
@@ -125,6 +126,10 @@ div.card header .imgContainer img {
   height: 3.694rem;
 }
 
+section.cardSection #userStatistics {
+  position: relative;
+}
+
 section.cardSection main #profileImage {
   width: 37rem;
   height: 37rem;
@@ -133,9 +138,8 @@ section.cardSection main #profileImage {
 
   margin-top: 3rem;
 
-  border: 1rem solid var(--img-profile);
+  box-shadow: 0 0 0 1rem var(--img-profile);
   transform: translateX(10rem);
-
 }
 
 section.cardSection main .statistics {
@@ -154,7 +158,7 @@ section.cardSection main .statistics {
   border-radius: 50px;
 
   position: absolute;
-  bottom: 15%;
+  bottom: -7%;
   left: 6%;
 }
 
@@ -199,21 +203,47 @@ main .card.colorThree {
 }
 
 main .card.colorFour {
-  background: linear-gradient(to right, #e53935, #e35d5b);;
+  background: linear-gradient(to right, #e53935, #e35d5b);
 }
 
 main .card.colorFive {
-  background: linear-gradient(to right, #2c3e50, #3498db);;
+  background: linear-gradient(to right, #2c3e50, #3498db);
 }
 
 main .card.colorSix {
-  background: linear-gradient(to right, #136a8a, #267871);;
+  background: linear-gradient(to right, #136a8a, #267871);
 }
 
 main .card.colorSeven {
-  background: linear-gradient(to right, #00bf8f, #001510);;
+  background: linear-gradient(to right, #00bf8f, #001510);
 }
 
 main .card.colorEight {
-  background: linear-gradient(to right, #6441a5, #2a0845);;
+  background: linear-gradient(to right, #6441a5, #2a0845);
+}
+
+@media (max-width: 806px) {
+  main {
+    flex-direction: column;
+    gap: 3rem;
+
+    padding-bottom: 5rem;
+
+    position: absolute;
+    top: 5%;
+  }
+
+  section.cardSection main #profileImage {
+    margin-top: 0;
+  }
+
+  section.cardSection main .statistics {
+    bottom: -6%;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    font-size: 50%;
+  }
 }

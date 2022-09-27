@@ -4,6 +4,7 @@ const changeColorButton = document.querySelector("button");
 const card = document.querySelector(".card");
 
 const url = "https://api.github.com/users/BrunoPdSilva";
+let counter = 0;
 
 const gradientArray = [
   "colorOne",
@@ -55,7 +56,9 @@ const renderCard = data => {
 
 changeColorButton.addEventListener("click", () => {
   gradientArray.forEach(color => card.classList.remove(color));
-  card.classList.add(gradientArray[(Math.random() * 8).toFixed(0)]);
+
+  card.classList.add(gradientArray[counter]);
+  counter >= gradientArray.length ? (counter = 0) : counter++;
 });
 
 getData();
