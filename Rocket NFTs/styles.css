@@ -1,0 +1,605 @@
+:root {
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0d0d0d;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+  background-color: var(--body-background);
+}
+
+/* HEADER */
+header {
+  padding-inline: 8.1rem;
+  padding-bottom: 0.3rem;
+
+  background-image: url(./assets/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HEADER - NAVBAR */
+header nav {
+  padding-top: 5.7rem;
+  margin-bottom: 9.8rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.9rem;
+  color: var(--text-color);
+}
+
+header nav h3 span {
+  color: var(--color-logo);
+}
+
+header nav ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 6rem;
+}
+
+header nav ul li a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: var(--text-color);
+}
+
+header nav button {
+  width: 23rem;
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--black-text);
+
+  cursor: pointer;
+}
+
+/* HEADER - MAIN */
+header main {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10rem;
+}
+
+header main section:nth-child(1) {
+  width: 40.1rem;
+}
+
+header main section:nth-child(1) p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: var(--text-color);
+
+  margin-bottom: 5.5rem;
+}
+
+header main section:nth-child(1) .artists {
+  width: 36.9rem;
+  height: 8.7rem;
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+header main section:nth-child(1) .artists div {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+
+header main section:nth-child(1) .artists div strong {
+  padding-top: 4.2rem;
+}
+
+header main section:nth-child(2) h1 {
+  width: 59.6rem;
+
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.1rem;
+  color: var(--text-color);
+}
+
+header main section:nth-child(2) h1 span {
+  color: var(--color-logo);
+}
+
+/* HEADER - FOOTER */
+header footer.gallery div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+header footer.gallery div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+header footer.gallery img {
+  width: 30.713rem;
+  height: 19.798rem;
+
+  border: 1px solid var(--text-color);
+}
+
+/* MAIN - MAIN CONTENT-01 */
+main.mainContent-01 {
+  height: 65.276rem;
+  width: 100%;
+
+  display: flex;
+
+  border-bottom: 1px solid #5a5757;
+}
+
+/* MAIN - MAIN CONTENT-01 ASIDE */
+main.mainContent-01 aside {
+  width: 34.1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+
+  border-right: 1px solid #5a5757;
+}
+
+main.mainContent-01 aside h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 6.1rem;
+  color: var(--text-color);
+
+  text-align: center;
+}
+
+main.mainContent-01 aside h2 p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--subtitle-color);
+}
+
+/* MAIN - MAIN CONTENT-01 SECTION */
+main.mainContent-01 section {
+  width: 100%;
+}
+
+main.mainContent-01 section div.articleContainer {
+  height: 35.17rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.mainContent-01 section div article {
+  width: 95.2rem;
+  height: 21.4rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+main.mainContent-01 section div article div {
+  width: 43.5rem;
+}
+
+main.mainContent-01 section div article div p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #ffffff;
+
+  margin-bottom: 6.3rem;
+}
+
+main.mainContent-01 section div article div p span {
+  color: var(--color-logo);
+  text-decoration: underline;
+}
+
+main.mainContent-01 section div article div a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+main.mainContent-01 section img {
+  height: 30rem;
+  width: 100%;
+  margin-left: 0.08rem;
+}
+
+/* MAIN - MAIN CONTENT-02 */
+main.mainContent-02 {
+  margin-block: 15rem;
+  padding-inline: 8.7rem;
+}
+
+main.mainContent-02 h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.1rem;
+  color: var(--text-color);
+
+  margin-bottom: 15.8rem;
+}
+
+main.mainContent-02 h2 span {
+  color: var(--color-logo);
+}
+
+main.mainContent-02 section {
+  display: flex;
+}
+
+main.mainContent-02 section aside {
+  width: 50%;
+  height: 71.803rem;
+}
+
+main.mainContent-02 section aside:nth-child(1) {
+  border-right: 1px solid #5a5757;
+}
+
+main.mainContent-02 section aside:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+main.mainContent-02 section aside .card {
+  width: 35rem;
+  height: 33.7rem;
+}
+
+main.mainContent-02 section aside .card:nth-child(1) {
+  margin-bottom: 5rem;
+}
+
+main.mainContent-02 section aside .card .cardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 4.4rem;
+}
+
+main.mainContent-02 section aside .card .cardTitle h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.7rem;
+  color: var(--text-color);
+}
+
+main.mainContent-02 section aside .card .cardTitle i img {
+  width: 2rem;
+  height: 2rem;
+}
+
+main.mainContent-02 section aside .card .cardSubtitle {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2.6rem;
+}
+
+main.mainContent-02 section aside .card .cardSubtitle p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--subtitle-color);
+}
+
+main.mainContent-02 section aside .card .cardSubtitle span {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-logo);
+}
+
+main.mainContent-02 section aside .card img.popularPicture {
+  width: 35rem;
+  height: 20rem;
+}
+
+/* MAIN - MAIN CONTENT-03 */
+
+main.mainContent-03 {
+  padding-inline: 7.65rem;
+}
+
+main.mainContent-03 h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.1rem;
+  color: var(--text-color);
+
+  text-align: center;
+  margin-bottom: 12rem;
+}
+
+main.mainContent-03 span {
+  color: var(--color-logo);
+}
+
+main.mainContent-03 section div.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+main.mainContent-03 section div.cardsContainer:nth-child(1) {
+  margin-bottom: 11.1rem;
+}
+
+main.mainContent-03 section .card {
+  width: 35rem;
+  height: 15rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background-color: var(--card-color);
+}
+
+main.mainContent-03 section .card.active {
+  background-color: var(--color-logo);
+}
+
+main.mainContent-03 section .card.active span {
+  color: var(--text-color);
+}
+
+main.mainContent-03 section .card div p {
+  margin-bottom: 1rem;
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: var(--text-color);
+}
+
+main.mainContent-03 section .card div span {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+main.mainContent-03 a {
+  width: 26.034rem;
+  margin: 5.4rem auto 14.766rem;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--text-color);
+}
+
+main.mainContent-03 a span {
+  margin-left: 1.3rem;
+}
+
+/* FOOTER */
+footer.endFooter {
+  width: 100%;
+  height: 70.9rem;
+
+  background-color: var(--card-color);
+}
+
+footer.endFooter section:nth-child(1) {
+  height: 22.2rem;
+  width: 100%;
+
+  padding-inline: 8.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #5a5757;
+}
+
+footer.endFooter section:nth-child(1) h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.9rem;
+  color: var(--text-color);
+}
+
+footer.endFooter section:nth-child(1) h2 span {
+  color: var(--color-logo);
+}
+
+footer.endFooter section:nth-child(1) button {
+  width: 8rem;
+  height: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-logo);
+  border: none;
+
+  cursor: pointer;
+}
+
+footer.endFooter section:nth-child(2) {
+  height: 32rem;
+
+  display: flex;
+
+  border-bottom: 1px solid #5a5757;
+}
+
+footer.endFooter section:nth-child(2) aside {
+  width: 54.4rem;
+  height: 100%;
+
+  padding-top: 6.7rem;
+  padding-left: 8.1rem;
+
+  border-right: 1px solid #5a5757;
+}
+
+footer.endFooter section:nth-child(2) aside h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.7rem;
+  color: var(--text-color);
+
+  margin-bottom: 2.5rem;
+}
+
+footer.endFooter section:nth-child(2) aside h2 span {
+  color: var(--color-logo);
+}
+
+footer.endFooter section:nth-child(2) aside .inputGroup {
+  width: 40.2rem;
+  height: 6.6rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--color-input);
+}
+
+footer.endFooter section:nth-child(2) aside .inputGroup input {
+  height: 100%;
+  width: 28rem;
+
+  padding-left: 2rem;
+
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--subtitle-color);
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+footer.endFooter section:nth-child(2) aside .inputGroup button {
+  width: 12.2rem;
+  height: 100%;
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--text-color);
+  border: none;
+  cursor: pointer;
+}
+
+footer.endFooter section:nth-child(2) div.social {
+  padding-left: 12.2rem;
+  padding-top: 7.4rem;
+
+  display: flex;
+  gap: 16rem;
+}
+
+footer.endFooter section:nth-child(2) div.social ul {
+}
+
+footer.endFooter section:nth-child(2) div.social h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: var(--text-color);
+  margin-bottom: 0.7rem;
+}
+
+footer.endFooter section:nth-child(2) div.social li {
+  margin-bottom: 1.5rem;
+}
+
+footer.endFooter section:nth-child(2) div.social li a {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--subtitle-color);
+}
+
+footer.endFooter section:nth-child(3) {
+  padding-inline: 8.6rem;
+  padding-top: 6.9rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.endFooter section:nth-child(3) p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--subtitle-color);
+}
+
+footer.endFooter section:nth-child(3) ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
