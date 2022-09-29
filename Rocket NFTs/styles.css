@@ -102,6 +102,11 @@ header main {
   margin-block: 9.8rem 10rem;
 }
 
+header main img.badge {
+  width: 20rem;
+  height: 20rem;
+}
+
 header main section:nth-child(1) {
   width: 40.1rem;
 }
@@ -366,6 +371,11 @@ main.mainContent-03 section .card div span {
   font-weight: 500;
 }
 
+main.mainContent-03 section .card img {
+  width: 10rem;
+  height: 10rem;
+}
+
 main.mainContent-03 a {
   width: 26.034rem;
   margin: 5.4rem auto 14.766rem;
@@ -551,4 +561,49 @@ main.mainContent-03 a:hover {
 main.mainContent-02 section aside .card:hover {
   transform: scale(1.01);
   cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  :root {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1130px) {
+  :root {
+    font-size: 47%;
+  }
+}
+
+@media (max-width: 1050px) {
+  :root {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 993px) {
+  header footer.gallery img {
+    width: 26rem;
+    height: 19rem;
+  }
+}
+
+@media (max-width: 920px) {
+  header main section:nth-child(2) h1 {
+    width: 45.6rem;
+    font-size: 4.3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 890px) {
+  :root {
+    font-size: 40%;
+  }
 }
