@@ -6,8 +6,10 @@
   --subtitle-color: #5a5757;
   --black-text: #000;
   --color-input: #0d0d0d;
+  --border: 1px solid #5a5757;
 
   font-size: 62.5%;
+  background-color: var(--body-background);
 }
 
 * {
@@ -18,6 +20,8 @@
   list-style: none;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+
+  color: var(--text-color);
 }
 
 html,
@@ -26,13 +30,23 @@ body {
   height: 100vh;
 
   overflow-x: hidden;
-  background-color: var(--body-background);
+}
+
+span {
+  color: var(--color-logo);
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2rem;
 }
 
 /* HEADER */
 header {
   padding-inline: 8.1rem;
-  padding-bottom: 0.3rem;
 
   background-image: url(./assets/background.png);
   background-position: center;
@@ -43,7 +57,6 @@ header {
 /* HEADER - NAVBAR */
 header nav {
   padding-top: 5.7rem;
-  margin-bottom: 9.8rem;
 
   display: flex;
   justify-content: space-between;
@@ -51,13 +64,7 @@ header nav {
 
 header nav h3 {
   font-size: 4rem;
-  font-weight: 700;
   line-height: 4.9rem;
-  color: var(--text-color);
-}
-
-header nav h3 span {
-  color: var(--color-logo);
 }
 
 header nav ul {
@@ -68,9 +75,6 @@ header nav ul {
 
 header nav ul li a {
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.2rem;
-  color: var(--text-color);
 }
 
 header nav button {
@@ -84,7 +88,6 @@ header nav button {
 
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 2rem;
   color: var(--black-text);
 
   cursor: pointer;
@@ -95,7 +98,7 @@ header main {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 10rem;
+  margin-block: 9.8rem 10rem;
 }
 
 header main section:nth-child(1) {
@@ -104,9 +107,6 @@ header main section:nth-child(1) {
 
 header main section:nth-child(1) p {
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.2rem;
-  color: var(--text-color);
 
   margin-bottom: 5.5rem;
 }
@@ -120,41 +120,26 @@ header main section:nth-child(1) .artists {
 }
 
 header main section:nth-child(1) .artists div {
-  height: 100%;
-
   display: flex;
   flex-direction: column;
 
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.2rem;
-  color: #ffffff;
-}
-
-header main section:nth-child(1) .artists div strong {
   padding-top: 4.2rem;
+
+  font-size: 1.8rem;
 }
 
 header main section:nth-child(2) h1 {
   width: 59.6rem;
 
   font-size: 5rem;
-  font-weight: 700;
-  line-height: 6.1rem;
-  color: var(--text-color);
-}
-
-header main section:nth-child(2) h1 span {
-  color: var(--color-logo);
 }
 
 /* HEADER - FOOTER */
 header footer.gallery div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 6rem;
 }
 
+header footer.gallery div:nth-child(1),
 header footer.gallery div:nth-child(2) {
   display: flex;
   justify-content: space-between;
@@ -170,11 +155,9 @@ header footer.gallery img {
 /* MAIN - MAIN CONTENT-01 */
 main.mainContent-01 {
   height: 65.276rem;
-  width: 100%;
-
   display: flex;
 
-  border-bottom: 1px solid #5a5757;
+  border-bottom: var(--border);
 }
 
 /* MAIN - MAIN CONTENT-01 ASIDE */
@@ -187,22 +170,14 @@ main.mainContent-01 aside {
   align-items: center;
   gap: 7rem;
 
-  border-right: 1px solid #5a5757;
+  border-right: var(--border);
 }
 
 main.mainContent-01 aside h2 {
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 6.1rem;
-  color: var(--text-color);
-
   text-align: center;
 }
 
 main.mainContent-01 aside h2 p {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 2.4rem;
   color: var(--subtitle-color);
 }
 
@@ -221,7 +196,6 @@ main.mainContent-01 section div.articleContainer {
 
 main.mainContent-01 section div article {
   width: 95.2rem;
-  height: 21.4rem;
 
   display: flex;
   justify-content: space-between;
@@ -233,49 +207,35 @@ main.mainContent-01 section div article div {
 
 main.mainContent-01 section div article div p {
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.2rem;
-  color: #ffffff;
 
   margin-bottom: 6.3rem;
 }
 
-main.mainContent-01 section div article div p span {
-  color: var(--color-logo);
+main.mainContent-01 section div article div p a {
   text-decoration: underline;
+  color: var(--color-logo);
 }
 
 main.mainContent-01 section div article div a {
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.2rem;
   text-decoration-line: underline;
-  color: #ffffff;
 }
 
 main.mainContent-01 section img {
   height: 30rem;
   width: 100%;
-  margin-left: 0.08rem;
+  margin-left: 0.06rem;
 }
 
 /* MAIN - MAIN CONTENT-02 */
 main.mainContent-02 {
-  margin-block: 15rem;
-  padding-inline: 8.7rem;
+  margin: 15rem 8.7rem;
 }
 
 main.mainContent-02 h2 {
-  font-size: 5rem;
-  font-weight: 700;
   line-height: 6.1rem;
-  color: var(--text-color);
 
   margin-bottom: 15.8rem;
-}
-
-main.mainContent-02 h2 span {
-  color: var(--color-logo);
 }
 
 main.mainContent-02 section {
@@ -288,7 +248,7 @@ main.mainContent-02 section aside {
 }
 
 main.mainContent-02 section aside:nth-child(1) {
-  border-right: 1px solid #5a5757;
+  border-right: var(--border);
 }
 
 main.mainContent-02 section aside:nth-child(2) {
@@ -310,15 +270,11 @@ main.mainContent-02 section aside .card .cardTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 4.4rem;
 }
 
 main.mainContent-02 section aside .card .cardTitle h3 {
   font-size: 3rem;
   font-weight: 500;
-  line-height: 3.7rem;
-  color: var(--text-color);
 }
 
 main.mainContent-02 section aside .card .cardTitle i img {
@@ -330,21 +286,16 @@ main.mainContent-02 section aside .card .cardSubtitle {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 2.6rem;
+  margin-block: 4.4rem 2.6rem;
 }
 
 main.mainContent-02 section aside .card .cardSubtitle p {
-  font-size: 2rem;
   font-weight: 600;
-  line-height: 2.4rem;
   color: var(--subtitle-color);
 }
 
 main.mainContent-02 section aside .card .cardSubtitle span {
   font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.4rem;
-  color: var(--color-logo);
 }
 
 main.mainContent-02 section aside .card img.popularPicture {
@@ -355,21 +306,14 @@ main.mainContent-02 section aside .card img.popularPicture {
 /* MAIN - MAIN CONTENT-03 */
 
 main.mainContent-03 {
-  padding-inline: 7.65rem;
+  margin-inline: 7.65rem;
 }
 
 main.mainContent-03 h2 {
-  font-size: 5rem;
-  font-weight: 700;
   line-height: 6.1rem;
-  color: var(--text-color);
 
   text-align: center;
   margin-bottom: 12rem;
-}
-
-main.mainContent-03 span {
-  color: var(--color-logo);
 }
 
 main.mainContent-03 section div.cardsContainer {
@@ -404,16 +348,12 @@ main.mainContent-03 section .card.active span {
 main.mainContent-03 section .card div p {
   margin-bottom: 1rem;
 
-  font-size: 2rem;
   font-weight: 500;
-  line-height: 2.4rem;
-  color: var(--text-color);
 }
 
 main.mainContent-03 section .card div span {
   font-size: 2rem;
   font-weight: 500;
-  line-height: 2.4rem;
 }
 
 main.mainContent-03 a {
@@ -421,12 +361,8 @@ main.mainContent-03 a {
   margin: 5.4rem auto 14.766rem;
 
   display: flex;
-  align-items: center;
 
   font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.4rem;
-  color: var(--text-color);
 }
 
 main.mainContent-03 a span {
@@ -436,33 +372,21 @@ main.mainContent-03 a span {
 /* FOOTER */
 footer.endFooter {
   width: 100%;
-  height: 70.9rem;
-
   background-color: var(--card-color);
 }
 
 footer.endFooter section:nth-child(1) {
   height: 22.2rem;
-  width: 100%;
 
   padding-inline: 8.6rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  border-bottom: 1px solid #5a5757;
 }
 
-footer.endFooter section:nth-child(1) h2 {
+footer.endFooter section:nth-child(1) h3 {
   font-size: 4rem;
-  font-weight: 700;
-  line-height: 4.9rem;
-  color: var(--text-color);
-}
-
-footer.endFooter section:nth-child(1) h2 span {
-  color: var(--color-logo);
 }
 
 footer.endFooter section:nth-child(1) button {
@@ -484,30 +408,22 @@ footer.endFooter section:nth-child(2) {
 
   display: flex;
 
-  border-bottom: 1px solid #5a5757;
+  border-block: var(--border);
 }
 
 footer.endFooter section:nth-child(2) aside {
   width: 54.4rem;
-  height: 100%;
+  padding: 6.7rem 0 0 8.1rem;
 
-  padding-top: 6.7rem;
-  padding-left: 8.1rem;
-
-  border-right: 1px solid #5a5757;
+  border-right: var(--border);
 }
 
-footer.endFooter section:nth-child(2) aside h2 {
+footer.endFooter section:nth-child(2) aside h4 {
   font-size: 3rem;
   font-weight: 500;
   line-height: 3.7rem;
-  color: var(--text-color);
 
   margin-bottom: 2.5rem;
-}
-
-footer.endFooter section:nth-child(2) aside h2 span {
-  color: var(--color-logo);
 }
 
 footer.endFooter section:nth-child(2) aside .inputGroup {
@@ -538,11 +454,10 @@ footer.endFooter section:nth-child(2) aside .inputGroup input {
 
 footer.endFooter section:nth-child(2) aside .inputGroup button {
   width: 12.2rem;
-  height: 100%;
 
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2.4rem;
+  color: var(--black-text);
 
   display: flex;
   justify-content: center;
@@ -554,21 +469,13 @@ footer.endFooter section:nth-child(2) aside .inputGroup button {
 }
 
 footer.endFooter section:nth-child(2) div.social {
-  padding-left: 12.2rem;
-  padding-top: 7.4rem;
-
+  margin: 0 auto;
   display: flex;
+  align-items: center;
   gap: 16rem;
 }
 
-footer.endFooter section:nth-child(2) div.social ul {
-}
-
-footer.endFooter section:nth-child(2) div.social h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2.4rem;
-  color: var(--text-color);
+footer.endFooter section:nth-child(2) div.social p {
   margin-bottom: 0.7rem;
 }
 
@@ -578,23 +485,19 @@ footer.endFooter section:nth-child(2) div.social li {
 
 footer.endFooter section:nth-child(2) div.social li a {
   font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.4rem;
   color: var(--subtitle-color);
 }
 
 footer.endFooter section:nth-child(3) {
+  height: 16.7rem;
   padding-inline: 8.6rem;
-  padding-top: 6.9rem;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer.endFooter section:nth-child(3) p {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.4rem;
   color: var(--subtitle-color);
 }
 
