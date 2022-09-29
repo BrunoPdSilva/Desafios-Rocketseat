@@ -44,7 +44,7 @@ p {
   font-size: 2rem;
 }
 
-/* HEADER */
+/* ========= HEADER =========*/
 header {
   padding-inline: 8.1rem;
 
@@ -75,6 +75,7 @@ header nav ul {
 
 header nav ul li a {
   font-size: 1.8rem;
+  transition: 0.3s ease;
 }
 
 header nav button {
@@ -150,8 +151,11 @@ header footer.gallery img {
   height: 19.798rem;
 
   border: 1px solid var(--text-color);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
+/* ========= MAIN ========= */
 /* MAIN - MAIN CONTENT-01 */
 main.mainContent-01 {
   height: 65.276rem;
@@ -260,6 +264,8 @@ main.mainContent-02 section aside:nth-child(2) {
 main.mainContent-02 section aside .card {
   width: 35rem;
   height: 33.7rem;
+
+  transition: 0.3s ease;
 }
 
 main.mainContent-02 section aside .card:nth-child(1) {
@@ -280,6 +286,9 @@ main.mainContent-02 section aside .card .cardTitle h3 {
 main.mainContent-02 section aside .card .cardTitle i img {
   width: 2rem;
   height: 2rem;
+
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 main.mainContent-02 section aside .card .cardSubtitle {
@@ -304,7 +313,6 @@ main.mainContent-02 section aside .card img.popularPicture {
 }
 
 /* MAIN - MAIN CONTENT-03 */
-
 main.mainContent-03 {
   margin-inline: 7.65rem;
 }
@@ -335,6 +343,8 @@ main.mainContent-03 section .card {
   gap: 4rem;
 
   background-color: var(--card-color);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 main.mainContent-03 section .card.active {
@@ -363,13 +373,15 @@ main.mainContent-03 a {
   display: flex;
 
   font-size: 2rem;
+
+  transition: 0.3s ease;
 }
 
 main.mainContent-03 a span {
   margin-left: 1.3rem;
 }
 
-/* FOOTER */
+/* ========= FOOTER ========= */
 footer.endFooter {
   width: 100%;
   background-color: var(--card-color);
@@ -401,6 +413,7 @@ footer.endFooter section:nth-child(1) button {
   border: none;
 
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 footer.endFooter section:nth-child(2) {
@@ -466,6 +479,7 @@ footer.endFooter section:nth-child(2) aside .inputGroup button {
   background-color: var(--text-color);
   border: none;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 footer.endFooter section:nth-child(2) div.social {
@@ -486,6 +500,7 @@ footer.endFooter section:nth-child(2) div.social li {
 footer.endFooter section:nth-child(2) div.social li a {
   font-size: 2rem;
   color: var(--subtitle-color);
+  transition: 0.3s ease;
 }
 
 footer.endFooter section:nth-child(3) {
@@ -497,6 +512,10 @@ footer.endFooter section:nth-child(3) {
   align-items: center;
 }
 
+footer.endFooter section:nth-child(3) li {
+  transition: 0.3s ease;
+}
+
 footer.endFooter section:nth-child(3) p {
   color: var(--subtitle-color);
 }
@@ -505,4 +524,31 @@ footer.endFooter section:nth-child(3) ul {
   display: flex;
   align-items: center;
   gap: 5rem;
+}
+
+/* ========= EFFECTS ========= */
+footer.endFooter section:nth-child(2) div.social li a:hover,
+footer.endFooter section:nth-child(3) li:hover {
+  filter: brightness(1.5);
+}
+
+footer.endFooter section:nth-child(1) button:hover,
+header nav ul li a:hover,
+footer.endFooter section:nth-child(2) aside .inputGroup button:hover {
+  filter: brightness(0.8);
+}
+
+main.mainContent-03 section .card:hover {
+  transform: scale(1.02);
+}
+
+header footer.gallery img:hover,
+/* main.mainContent-02 section aside .card .cardTitle i img:hover, */
+main.mainContent-03 a:hover {
+  transform: scale(1.05);
+}
+
+main.mainContent-02 section aside .card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
