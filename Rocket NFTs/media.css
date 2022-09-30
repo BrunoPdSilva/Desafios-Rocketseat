@@ -51,6 +51,30 @@
 }
 
 @media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+
+  header main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  header main section:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header main section:nth-child(1) p {
+    width: 40rem;
+  }
+
+  header main section:nth-child(2) h1 {
+    width: 61.6rem;
+  }
+
   main.mainContent-01 {
     height: auto;
     display: block;
@@ -69,9 +93,6 @@
     border-bottom: var(--border);
   }
 
-  main.mainContent-01 section {
-  }
-
   main.mainContent-01 section div.articleContainer {
     height: 50rem;
   }
@@ -81,6 +102,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   main.mainContent-01 section div.articleContainer article div {
     width: 80%;
     margin-bottom: 2.5rem;
@@ -90,16 +112,12 @@
 
     font-size: 2rem;
   }
-  footer.endFooter section:nth-child(2) {
-  }
 }
 
 @media (max-width: 580px) {
+
   main.mainContent-02 {
     margin-inline: 2rem;
-  }
-  main.mainContent-02 section {
-    width: 100%;
   }
 
   main.mainContent-02 section aside .card {
@@ -114,18 +132,20 @@
 @media (max-width: 540px) {
   main.mainContent-03 section {
     grid-template-columns: repeat(1, minmax(31rem, 1fr));
-
     gap: 5rem 3rem;
   }
+}
+
+@media (max-width: 510px) {
+
 }
 
 @media (max-width: 400px) {
   :root {
     font-size: 36%;
   }
+
   header {
     padding-inline: 3rem;
-  }
-  main.mainContent-02 section aside .card {
   }
 }

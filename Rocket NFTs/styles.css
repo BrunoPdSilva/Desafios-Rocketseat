@@ -254,7 +254,7 @@ main.mainContent-02 section aside {
 main.mainContent-02 section aside .card {
   width: 35rem;
   height: 33.7rem;
-  
+
   transition: 0.3s ease;
 }
 
@@ -315,13 +315,12 @@ main.mainContent-03 h2 {
 
   margin-bottom: 12rem;
   text-align: center;
-
 }
 
 main.mainContent-03 section {
   width: 80%;
   margin: 0 auto;
-  
+
   display: grid;
   grid-template-columns: repeat(3, minmax(31rem, 1fr));
   grid-template-rows: repeat(2, 15rem);
@@ -538,13 +537,13 @@ footer.endFooter section:nth-child(2) aside .inputGroup button:hover {
   filter: brightness(0.8);
 }
 
-main.mainContent-03 section .card:hover {
-  transform: scale(1.02);
-}
-
 header footer.gallery img:hover,
 main.mainContent-03 a:hover {
   transform: scale(1.05);
+}
+
+main.mainContent-03 section .card:hover {
+  transform: scale(1.02);
 }
 
 main.mainContent-02 section aside .card:hover {
