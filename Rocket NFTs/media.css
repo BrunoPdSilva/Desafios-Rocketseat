@@ -1,0 +1,131 @@
+@media (max-width: 1350px) {
+  :root {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1130px) {
+  :root {
+    font-size: 47%;
+  }
+}
+
+@media (max-width: 1050px) {
+  :root {
+    font-size: 44%;
+  }
+  main.mainContent-03 section {
+    grid-column-gap: 6rem;
+  }
+}
+
+@media (max-width: 940px) {
+  :root {
+    font-size: 40%;
+  }
+
+  header main section:nth-child(2) h1 {
+    width: 45.6rem;
+    font-size: 4.3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 840px) {
+  header footer.gallery {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  main.mainContent-03 section {
+    grid-template-columns: repeat(2, minmax(31rem, 1fr));
+    grid-template-rows: repeat(auto-fit, 15rem);
+    grid-row-gap: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main.mainContent-01 {
+    height: auto;
+    display: block;
+  }
+
+  main.mainContent-01 aside {
+    width: 100%;
+    height: 20rem;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    border-right: none;
+    border-bottom: var(--border);
+  }
+
+  main.mainContent-01 section {
+  }
+
+  main.mainContent-01 section div.articleContainer {
+    height: 50rem;
+  }
+
+  main.mainContent-01 section div.articleContainer article {
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.mainContent-01 section div.articleContainer article div {
+    width: 80%;
+    margin-bottom: 2.5rem;
+  }
+  main.mainContent-01 section div.articleContainer article div p {
+    margin-bottom: 1.5rem;
+
+    font-size: 2rem;
+  }
+  footer.endFooter section:nth-child(2) {
+  }
+}
+
+@media (max-width: 580px) {
+  main.mainContent-02 {
+    margin-inline: 2rem;
+  }
+  main.mainContent-02 section {
+    width: 100%;
+  }
+
+  main.mainContent-02 section aside .card {
+    width: 27rem;
+  }
+
+  main.mainContent-02 section aside {
+    height: 67rem;
+  }
+}
+
+@media (max-width: 540px) {
+  main.mainContent-03 section {
+    grid-template-columns: repeat(1, minmax(31rem, 1fr));
+
+    gap: 5rem 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 36%;
+  }
+  header {
+    padding-inline: 3rem;
+  }
+  main.mainContent-02 section aside .card {
+  }
+}

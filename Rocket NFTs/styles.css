@@ -141,19 +141,16 @@ header main section:nth-child(2) h1 {
 }
 
 /* HEADER - FOOTER */
-header footer.gallery div:nth-child(1) {
-  margin-bottom: 6rem;
-}
-
-header footer.gallery div:nth-child(1),
-header footer.gallery div:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
+header footer.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(30rem, 1fr));
+  grid-template-rows: repeat(2, 20rem);
+  gap: 6.044rem 1.616rem;
 }
 
 header footer.gallery img {
-  width: 30.713rem;
-  height: 19.798rem;
+  width: 100%;
+  height: 20rem;
 
   border: 1px solid var(--text-color);
   cursor: pointer;
@@ -171,7 +168,7 @@ main.mainContent-01 {
 
 /* MAIN - MAIN CONTENT-01 ASIDE */
 main.mainContent-01 aside {
-  width: 34.1rem;
+  width: 20%;
 
   display: flex;
   flex-direction: column;
@@ -243,7 +240,6 @@ main.mainContent-02 {
 
 main.mainContent-02 h2 {
   line-height: 6.1rem;
-
   margin-bottom: 15.8rem;
 }
 
@@ -252,25 +248,22 @@ main.mainContent-02 section {
 }
 
 main.mainContent-02 section aside {
-  width: 50%;
-  height: 71.803rem;
+  flex: 1;
+}
+
+main.mainContent-02 section aside .card {
+  width: 35rem;
+  height: 33.7rem;
+  
+  transition: 0.3s ease;
 }
 
 main.mainContent-02 section aside:nth-child(1) {
   border-right: var(--border);
 }
 
-main.mainContent-02 section aside:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-main.mainContent-02 section aside .card {
-  width: 35rem;
-  height: 33.7rem;
-
-  transition: 0.3s ease;
+main.mainContent-02 section aside:nth-child(2) .card {
+  margin-left: auto;
 }
 
 main.mainContent-02 section aside .card:nth-child(1) {
@@ -313,33 +306,30 @@ main.mainContent-02 section aside .card .cardSubtitle span {
 }
 
 main.mainContent-02 section aside .card img.popularPicture {
-  width: 35rem;
-  height: 20rem;
+  width: 100%;
 }
 
 /* MAIN - MAIN CONTENT-03 */
-main.mainContent-03 {
-  margin-inline: 7.65rem;
-}
-
 main.mainContent-03 h2 {
   line-height: 6.1rem;
 
-  text-align: center;
   margin-bottom: 12rem;
+  text-align: center;
+
 }
 
-main.mainContent-03 section div.cardsContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-main.mainContent-03 section div.cardsContainer:nth-child(1) {
-  margin-bottom: 11.1rem;
+main.mainContent-03 section {
+  width: 80%;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(31rem, 1fr));
+  grid-template-rows: repeat(2, 15rem);
+  gap: 11.1rem;
 }
 
 main.mainContent-03 section .card {
-  width: 35rem;
+  width: 100%;
   height: 15rem;
 
   display: flex;
@@ -553,7 +543,6 @@ main.mainContent-03 section .card:hover {
 }
 
 header footer.gallery img:hover,
-/* main.mainContent-02 section aside .card .cardTitle i img:hover, */
 main.mainContent-03 a:hover {
   transform: scale(1.05);
 }
@@ -561,49 +550,4 @@ main.mainContent-03 a:hover {
 main.mainContent-02 section aside .card:hover {
   transform: scale(1.01);
   cursor: pointer;
-}
-
-@media (max-width: 1350px) {
-  :root {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 1200px) {
-  :root {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 1130px) {
-  :root {
-    font-size: 47%;
-  }
-}
-
-@media (max-width: 1050px) {
-  :root {
-    font-size: 44%;
-  }
-}
-
-@media (max-width: 993px) {
-  header footer.gallery img {
-    width: 26rem;
-    height: 19rem;
-  }
-}
-
-@media (max-width: 920px) {
-  header main section:nth-child(2) h1 {
-    width: 45.6rem;
-    font-size: 4.3rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 890px) {
-  :root {
-    font-size: 40%;
-  }
 }
