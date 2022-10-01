@@ -67,6 +67,10 @@ header nav h3 {
   line-height: 4.9rem;
 }
 
+header .mobileLinks {
+  display: none;
+}
+
 header nav ul {
   display: flex;
   align-items: flex-end;
@@ -92,6 +96,11 @@ header nav button {
   color: var(--black-text);
 
   cursor: pointer;
+}
+
+header nav button img {
+  width: 3rem;
+  height: 3rem;
 }
 
 /* HEADER - MAIN */
@@ -419,7 +428,6 @@ footer.endFooter section:nth-child(2) {
   height: 32rem;
 
   display: flex;
-
   border-block: var(--border);
 }
 
