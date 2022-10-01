@@ -20,7 +20,7 @@
   :root {
     font-size: 44%;
   }
-  main.mainContent-03 section {
+  main.contentSection3 section {
     grid-column-gap: 6rem;
   }
 }
@@ -30,7 +30,7 @@
     font-size: 40%;
   }
 
-  header main section:nth-child(2) h1 {
+  header main h1 {
     width: 45.6rem;
     font-size: 4.3rem;
     text-align: center;
@@ -38,12 +38,12 @@
 }
 
 @media (max-width: 840px) {
-  header footer.gallery {
+  header .gallery {
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-template-rows: repeat(4, 1fr);
   }
 
-  main.mainContent-03 section {
+  main.contentSection3 section {
     grid-template-columns: repeat(2, minmax(31rem, 1fr));
     grid-template-rows: repeat(auto-fit, 15rem);
     grid-row-gap: 8rem;
@@ -57,6 +57,10 @@
     gap: 2rem;
   }
 
+  header main h1 {
+    width: 100%;
+  }
+
   header main section:nth-child(1) {
     display: flex;
     justify-content: space-between;
@@ -67,54 +71,47 @@
     width: 40rem;
   }
 
-  header main section:nth-child(2) h1 {
-    width: 61.6rem;
-  }
-
-  main.mainContent-01 {
+  main.contentSection1 {
     height: auto;
     display: block;
   }
 
-  main.mainContent-01 aside {
+  main.contentSection1 aside {
     width: 100%;
     height: 20rem;
 
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 0;
 
     border-right: none;
     border-bottom: var(--border);
   }
 
-  main.mainContent-01 section div.articleContainer {
+  main.contentSection1 section div.articleContainer {
     height: 50rem;
   }
 
-  main.mainContent-01 section div.articleContainer article {
-    padding-top: 2rem;
+  main.contentSection1 section div.articleContainer article {
     flex-direction: column;
     align-items: center;
   }
 
-  main.mainContent-01 section div.articleContainer article div {
+  main.contentSection1 section div.articleContainer article div {
     width: 80%;
-    margin-bottom: 2.5rem;
   }
-  main.mainContent-01 section div.articleContainer article div p {
-    margin-bottom: 1.5rem;
 
+  main.contentSection1 section div.articleContainer article div p {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  footer.endFooter section:nth-child(2) {
+  footer section:nth-child(2) {
     height: auto;
     flex-direction: column;
   }
 
-  footer.endFooter section:nth-child(2) aside {
+  footer section:nth-child(2) aside:nth-child(1) {
     width: 100%;
 
     padding-inline: 0;
@@ -128,7 +125,7 @@
     border-right: none;
   }
 
-  footer.endFooter section:nth-child(2) div.social {
+  footer section:nth-child(2) .footerLinks {
     width: 100%;
 
     display: flex;
@@ -160,30 +157,25 @@
     margin-top: 6rem;
   }
 
-  footer.endFooter section:nth-child(1) {
+  footer section:nth-child(1) {
     padding-inline: 4.6rem;
   }
 }
 
 @media (max-width: 580px) {
-  main.mainContent-02 {
+  main.contentSection2 {
     margin-inline: 2rem;
   }
 
-  main.mainContent-02 section aside .card {
+  main.contentSection2 section aside {
+    height: 67rem;
+  }
+
+  main.contentSection2 section aside .card {
     width: 27rem;
   }
 
-  main.mainContent-02 section aside {
-    height: 67rem;
-  }
-}
-
-@media (max-width: 540px) {
-  header main {
-    gap: 1rem;
-  }
-  main.mainContent-03 section {
+  main.contentSection3 section {
     grid-template-columns: repeat(1, minmax(31rem, 1fr));
     gap: 5rem 3rem;
   }
@@ -194,31 +186,22 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
+
   header main section:nth-child(1) p {
     width: 90%;
     margin-bottom: 2.5rem;
   }
+
   header main section:nth-child(1) .artists {
     height: 11rem;
   }
 
-  header main section:nth-child(2) {
-    width: 90%;
-  }
-
-  header main section:nth-child(2) h1 {
-    width: 98%;
-  }
-
-  footer.endFooter section:nth-child(3) {
+  footer section:nth-child(3) {
     flex-direction: column;
     justify-content: center;
-  }
-
-  footer.endFooter section:nth-child(3) p {
-    padding-bottom: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -231,7 +214,7 @@
     padding-inline: 3rem;
   }
 
-  footer.endFooter section:nth-child(2) div.social {
+  footer section:nth-child(2) .footerLinks {
     gap: 8rem;
   }
 }

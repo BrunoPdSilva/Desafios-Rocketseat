@@ -55,14 +55,14 @@ header {
 }
 
 /* HEADER - NAVBAR */
-header nav {
+header .navbar {
   padding-top: 5.7rem;
 
   display: flex;
   justify-content: space-between;
 }
 
-header nav h3 {
+header .navbar h3 {
   font-size: 4rem;
   line-height: 4.9rem;
 }
@@ -71,18 +71,18 @@ header .mobileLinks {
   display: none;
 }
 
-header nav ul {
+header .navbar ul {
   display: flex;
   align-items: flex-end;
   gap: 6rem;
 }
 
-header nav ul li a {
+header .navbar ul li a {
   font-size: 1.8rem;
   transition: 0.3s ease;
 }
 
-header nav button {
+header .navbar button {
   width: 23rem;
   height: 5rem;
 
@@ -98,7 +98,7 @@ header nav button {
   cursor: pointer;
 }
 
-header nav button img {
+header .navbar button img {
   width: 3rem;
   height: 3rem;
 }
@@ -143,21 +143,21 @@ header main section:nth-child(1) .artists div {
   font-size: 1.8rem;
 }
 
-header main section:nth-child(2) h1 {
+header main h1 {
   width: 59.6rem;
 
   font-size: 5rem;
 }
 
-/* HEADER - FOOTER */
-header footer.gallery {
+/* HEADER - GALLERY */
+header .gallery {
   display: grid;
   grid-template-columns: repeat(4, minmax(30rem, 1fr));
   grid-template-rows: repeat(2, 20rem);
   gap: 6.044rem 1.616rem;
 }
 
-header footer.gallery img {
+header .gallery img {
   width: 100%;
   height: 20rem;
 
@@ -168,7 +168,7 @@ header footer.gallery img {
 
 /* ========= MAIN ========= */
 /* MAIN - MAIN CONTENT-01 */
-main.mainContent-01 {
+main.contentSection1 {
   height: 65.276rem;
   display: flex;
 
@@ -176,7 +176,7 @@ main.mainContent-01 {
 }
 
 /* MAIN - MAIN CONTENT-01 ASIDE */
-main.mainContent-01 aside {
+main.contentSection1 aside {
   width: 20%;
 
   display: flex;
@@ -188,20 +188,20 @@ main.mainContent-01 aside {
   border-right: var(--border);
 }
 
-main.mainContent-01 aside h2 {
+main.contentSection1 aside h2 {
   text-align: center;
 }
 
-main.mainContent-01 aside h2 p {
+main.contentSection1 aside h2 p {
   color: var(--subtitle-color);
 }
 
 /* MAIN - MAIN CONTENT-01 SECTION */
-main.mainContent-01 section {
+main.contentSection1 section {
   width: 100%;
 }
 
-main.mainContent-01 section div.articleContainer {
+main.contentSection1 section div.articleContainer {
   height: 35.17rem;
 
   display: flex;
@@ -209,88 +209,88 @@ main.mainContent-01 section div.articleContainer {
   align-items: center;
 }
 
-main.mainContent-01 section div article {
+main.contentSection1 section div article {
   width: 95.2rem;
 
   display: flex;
   justify-content: space-between;
 }
 
-main.mainContent-01 section div article div {
+main.contentSection1 section div article div {
   width: 43.5rem;
 }
 
-main.mainContent-01 section div article div p {
+main.contentSection1 section div article div p {
   font-size: 1.8rem;
 
   margin-bottom: 6.3rem;
 }
 
-main.mainContent-01 section div article div p a {
+main.contentSection1 section div article div p a {
   text-decoration: underline;
   color: var(--color-logo);
 }
 
-main.mainContent-01 section div article div a {
+main.contentSection1 section div article div a {
   font-size: 1.8rem;
   text-decoration-line: underline;
 }
 
-main.mainContent-01 section img {
+main.contentSection1 section img {
   height: 30rem;
   width: 100%;
   margin-left: 0.06rem;
 }
 
 /* MAIN - MAIN CONTENT-02 */
-main.mainContent-02 {
+main.contentSection2 {
   margin: 15rem 8.7rem;
 }
 
-main.mainContent-02 h2 {
+main.contentSection2 h2 {
   line-height: 6.1rem;
   margin-bottom: 15.8rem;
 }
 
-main.mainContent-02 section {
+main.contentSection2 section {
   display: flex;
 }
 
-main.mainContent-02 section aside {
+main.contentSection2 section aside {
   flex: 1;
 }
 
-main.mainContent-02 section aside .card {
+main.contentSection2 section aside .card {
   width: 35rem;
   height: 33.7rem;
 
   transition: 0.3s ease;
 }
 
-main.mainContent-02 section aside:nth-child(1) {
+main.contentSection2 section aside:nth-child(1) {
   border-right: var(--border);
 }
 
-main.mainContent-02 section aside:nth-child(2) .card {
+main.contentSection2 section aside:nth-child(2) .card {
   margin-left: auto;
 }
 
-main.mainContent-02 section aside .card:nth-child(1) {
+main.contentSection2 section aside .card:nth-child(1) {
   margin-bottom: 5rem;
 }
 
-main.mainContent-02 section aside .card .cardTitle {
+main.contentSection2 section aside .card .cardTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-main.mainContent-02 section aside .card .cardTitle h3 {
+main.contentSection2 section aside .card .cardTitle h3 {
   font-size: 3rem;
   font-weight: 500;
 }
 
-main.mainContent-02 section aside .card .cardTitle i img {
+main.contentSection2 section aside .card .cardTitle i img {
   width: 2rem;
   height: 2rem;
 
@@ -298,35 +298,35 @@ main.mainContent-02 section aside .card .cardTitle i img {
   transition: 0.3s ease;
 }
 
-main.mainContent-02 section aside .card .cardSubtitle {
+main.contentSection2 section aside .card .cardSubtitle {
   display: flex;
   justify-content: space-between;
 
   margin-block: 4.4rem 2.6rem;
 }
 
-main.mainContent-02 section aside .card .cardSubtitle p {
+main.contentSection2 section aside .card .cardSubtitle p {
   font-weight: 600;
   color: var(--subtitle-color);
 }
 
-main.mainContent-02 section aside .card .cardSubtitle span {
+main.contentSection2 section aside .card .cardSubtitle span {
   font-size: 2rem;
 }
 
-main.mainContent-02 section aside .card img.popularPicture {
+main.contentSection2 section aside .card img.popularPicture {
   width: 100%;
 }
 
 /* MAIN - MAIN CONTENT-03 */
-main.mainContent-03 h2 {
+main.contentSection3 h2 {
   line-height: 6.1rem;
 
   margin-bottom: 12rem;
   text-align: center;
 }
 
-main.mainContent-03 section {
+main.contentSection3 section {
   width: 80%;
   margin: 0 auto;
 
@@ -336,7 +336,7 @@ main.mainContent-03 section {
   gap: 11.1rem;
 }
 
-main.mainContent-03 section .card {
+main.contentSection3 section .card {
   width: 100%;
   height: 15rem;
 
@@ -350,31 +350,31 @@ main.mainContent-03 section .card {
   transition: 0.3s ease;
 }
 
-main.mainContent-03 section .card.active {
+main.contentSection3 section .card.active {
   background-color: var(--color-logo);
 }
 
-main.mainContent-03 section .card.active span {
+main.contentSection3 section .card.active span {
   color: var(--text-color);
 }
 
-main.mainContent-03 section .card div p {
+main.contentSection3 section .card div p {
   margin-bottom: 1rem;
 
   font-weight: 500;
 }
 
-main.mainContent-03 section .card div span {
+main.contentSection3 section .card div span {
   font-size: 2rem;
   font-weight: 500;
 }
 
-main.mainContent-03 section .card img {
+main.contentSection3 section .card img {
   width: 10rem;
   height: 10rem;
 }
 
-main.mainContent-03 a {
+main.contentSection3 a {
   width: 26.034rem;
   margin: 5.4rem auto 14.766rem;
 
@@ -385,17 +385,17 @@ main.mainContent-03 a {
   transition: 0.3s ease;
 }
 
-main.mainContent-03 a span {
+main.contentSection3 a span {
   margin-left: 1.3rem;
 }
 
 /* ========= FOOTER ========= */
-footer.endFooter {
+footer {
   width: 100%;
   background-color: var(--card-color);
 }
 
-footer.endFooter section:nth-child(1) {
+footer section:nth-child(1) {
   height: 22.2rem;
 
   padding-inline: 8.6rem;
@@ -405,11 +405,11 @@ footer.endFooter section:nth-child(1) {
   align-items: center;
 }
 
-footer.endFooter section:nth-child(1) h3 {
+footer section:nth-child(1) h3 {
   font-size: 4rem;
 }
 
-footer.endFooter section:nth-child(1) button {
+footer section:nth-child(1) button {
   width: 8rem;
   height: 8rem;
 
@@ -424,21 +424,21 @@ footer.endFooter section:nth-child(1) button {
   transition: 0.3s ease;
 }
 
-footer.endFooter section:nth-child(2) {
+footer section:nth-child(2) {
   height: 32rem;
 
   display: flex;
   border-block: var(--border);
 }
 
-footer.endFooter section:nth-child(2) aside {
+footer section:nth-child(2) aside:nth-child(1) {
   width: 54.4rem;
   padding: 6.7rem 0 0 8.1rem;
 
   border-right: var(--border);
 }
 
-footer.endFooter section:nth-child(2) aside h4 {
+footer section:nth-child(2) aside h4 {
   font-size: 3rem;
   font-weight: 500;
   line-height: 3.7rem;
@@ -446,7 +446,7 @@ footer.endFooter section:nth-child(2) aside h4 {
   margin-bottom: 2.5rem;
 }
 
-footer.endFooter section:nth-child(2) aside .inputGroup {
+footer section:nth-child(2) aside .inputGroup {
   width: 40.2rem;
   height: 6.6rem;
 
@@ -456,7 +456,7 @@ footer.endFooter section:nth-child(2) aside .inputGroup {
   background-color: var(--color-input);
 }
 
-footer.endFooter section:nth-child(2) aside .inputGroup input {
+footer section:nth-child(2) aside .inputGroup input {
   height: 100%;
   width: 28rem;
 
@@ -472,7 +472,7 @@ footer.endFooter section:nth-child(2) aside .inputGroup input {
   outline: none;
 }
 
-footer.endFooter section:nth-child(2) aside .inputGroup button {
+footer section:nth-child(2) aside .inputGroup button {
   width: 12.2rem;
 
   font-size: 2rem;
@@ -489,28 +489,28 @@ footer.endFooter section:nth-child(2) aside .inputGroup button {
   transition: 0.3s ease;
 }
 
-footer.endFooter section:nth-child(2) div.social {
+footer section:nth-child(2) .footerLinks {
   margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 16rem;
 }
 
-footer.endFooter section:nth-child(2) div.social p {
+footer section:nth-child(2) .footerLinks p {
   margin-bottom: 0.7rem;
 }
 
-footer.endFooter section:nth-child(2) div.social li {
+footer section:nth-child(2) .footerLinks li {
   margin-bottom: 1.5rem;
 }
 
-footer.endFooter section:nth-child(2) div.social li a {
+footer section:nth-child(2) .footerLinks li a {
   font-size: 2rem;
   color: var(--subtitle-color);
   transition: 0.3s ease;
 }
 
-footer.endFooter section:nth-child(3) {
+footer section:nth-child(3) {
   height: 16.7rem;
   padding-inline: 8.6rem;
 
@@ -519,42 +519,42 @@ footer.endFooter section:nth-child(3) {
   align-items: center;
 }
 
-footer.endFooter section:nth-child(3) li {
-  transition: 0.3s ease;
-}
-
-footer.endFooter section:nth-child(3) p {
-  color: var(--subtitle-color);
-}
-
-footer.endFooter section:nth-child(3) ul {
+footer section:nth-child(3) ul {
   display: flex;
   align-items: center;
   gap: 5rem;
 }
 
+footer section:nth-child(3) li {
+  transition: 0.3s ease;
+}
+
+footer section:nth-child(3) p {
+  color: var(--subtitle-color);
+}
+
 /* ========= EFFECTS ========= */
-footer.endFooter section:nth-child(2) div.social li a:hover,
-footer.endFooter section:nth-child(3) li:hover {
+footer section:nth-child(2) .footerLinks li a:hover,
+footer section:nth-child(3) li:hover {
   filter: brightness(1.5);
 }
 
-footer.endFooter section:nth-child(1) button:hover,
-header nav ul li a:hover,
-footer.endFooter section:nth-child(2) aside .inputGroup button:hover {
+footer section:nth-child(1) button:hover,
+header .navbar ul li a:hover,
+footer section:nth-child(2) aside .inputGroup button:hover {
   filter: brightness(0.8);
 }
 
-header footer.gallery img:hover,
-main.mainContent-03 a:hover {
+header .gallery img:hover,
+main.contentSection3 a:hover {
   transform: scale(1.05);
 }
 
-main.mainContent-03 section .card:hover {
+main.contentSection3 section .card:hover {
   transform: scale(1.02);
 }
 
-main.mainContent-02 section aside .card:hover {
+main.contentSection2 section aside .card:hover {
   transform: scale(1.01);
   cursor: pointer;
 }
