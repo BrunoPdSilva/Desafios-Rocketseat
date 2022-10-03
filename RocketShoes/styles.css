@@ -10,8 +10,6 @@
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 
-  background-color: var(--background);
-
   --webkit-font-smoothing: antialiased;
 }
 
@@ -28,6 +26,9 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow-x: hidden;
+
+  background-color: var(--background);
 }
 
 h1 {
@@ -38,13 +39,6 @@ h1 {
 h3 {
   font-size: 1.8rem;
   line-height: 2.1rem;
-}
-
-ul.footerLinks li a {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 2.1rem;
-  color: var(--black);
 }
 
 li {
@@ -66,7 +60,6 @@ button {
 /* === HEADER === */
 header {
   width: 100%;
-
   margin-top: 3.9rem;
 
   position: absolute;
@@ -75,21 +68,22 @@ header {
 }
 
 header nav {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-header nav i img {
+header nav .logo {
   width: 5.2rem;
   height: 3.64rem;
 }
 
 header nav .navLinks {
+  width: 47%;
   display: flex;
-  gap: 9rem;
+  gap: 10%;
 }
 
 header nav .navLinks li a {
@@ -97,6 +91,15 @@ header nav .navLinks li a {
   line-height: 2.8rem;
   font-weight: 700;
   color: var(--black);
+}
+
+header nav section {
+  width: 29rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
 }
 
 header nav .input-container {
@@ -134,18 +137,35 @@ header nav .input-container input {
 header nav .bagIcon img {
   width: 3.4rem;
   height: 3.4rem;
-  margin-block: 0.6rem;
   transition: 0.3s;
 }
 
-header nav .navLinks li:hover {
+header nav .openModalBtn {
+  height: 100%;
+
+  display: none;
+  align-items: center;
+
+  background: none;
+  border: none;
+}
+
+header nav .openModalBtn img {
+  width: 3.4rem;
+  height: 3.4rem;
   transition: 0.3s;
-  transform: scale(1.08);
 }
 
 header nav .navLinks li a:hover {
   transition: 0.3s;
   color: rgb(69, 69, 69);
+} 
+
+header nav .bagIcon:hover,
+header nav .navLinks li:hover,
+header nav .burgerIcon:hover {
+  transition: 0.3s;
+  transform: scale(1.08);
 }
 
 /* === MAIN === */
@@ -155,7 +175,7 @@ main {
 
 /* === MAIN SECTION 01 === */
 main .content-section {
-  width: 35%;
+  width: 40%;
   display: flex;
   align-items: center;
 }
@@ -207,23 +227,28 @@ main .img-section {
 }
 
 main .main-image {
-  width: 51rem;
-  height: 59.7rem;
+  width: 70%;
+  height: 70%;
   margin-top: 17.4rem;
 }
 
 main .img-section .images {
-  width: 100%;
+  width: 95%;
   margin-bottom: 2rem;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  column-gap: 2rem;
+
+  /*  display: flex;
   justify-content: space-around;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 main .img-section .images img {
   height: 18.28rem;
-  width: 27rem;
+  width: 100%;
 }
 
 main .img-section .images img:hover {
@@ -234,42 +259,41 @@ main .img-section .images img:hover {
 /* === FOOTER === */
 footer {
   width: 100%;
-  height: 16.633rem;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
 }
 
 footer .iframeContainer {
-  background-color: #000;
-}
-
-footer .footerLinks {
   width: 100%;
-  display: flex;
-}
-
-footer li {
-  width: 24.897rem;
-  height: 100%;
 
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  transition: 0.3s ease-out;
+  background-color: #000;
 }
 
-footer ul li:hover {
+footer .linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .linkContainer a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  color: var(--black);
+}
+
+footer .linkContainer:hover {
   background-color: rgb(69, 69, 69);
 }
 
-footer ul li:hover a {
+footer .linkContainer:hover a {
   color: white;
 }
 
 footer .explore {
-  width: 50rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +310,6 @@ footer .explore h3 {
 }
 
 footer .explore:hover {
-  background-color: rgb(4, 4, 4);
 }
 
 footer .explore:hover i {
@@ -301,35 +324,116 @@ footer .explore:hover i {
     transform: translateX(20px);
   }
 }
-/* 
-@media (max-width: 1170px) {
+
+@media (max-width: 1300px) {
   :root {
     font-size: 55%;
   }
-
-  footer .explore h3 {
-    margin-right: 0.5rem;
-  }
-
-  header nav ul {
-    gap: 5rem;
-  }
-
-  main .img-section {
-    width: 670px;
-  }
-  main .img-section .images img {
-    width: 22rem;
-  }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1020px) {
   :root {
     font-size: 46%;
   }
+}
 
-  main .img-section {
-    width: 600px;
+@media (max-width: 844px) {
+  :root {
+    font-size: 39%;
   }
 }
- */
+
+@media (max-width: 730px) {
+  header {
+    position: relative;
+    margin-bottom: 3rem;
+
+    padding-bottom: 2rem;
+
+    border-bottom: 1px red solid;
+  }
+
+  header nav {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  header nav .navLinks {
+    display: none;
+  }
+
+  header nav .openModalBtn {
+    display: flex;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main .content-section {
+    width: 100%;
+  }
+
+  main .content-section .price-container {
+    width: 87%;
+    display: flex;
+    margin-inline: auto;
+    gap: 2rem;
+  }
+
+  main .content-section .price-container .productInfo {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  main .img-section {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 16.6rem);
+  }
+}
+
+@media (max-width: 525px) {
+  main .content-section .price-container {
+    text-align: center;
+  }
+  main .content-section .price-container h1 {
+    font-size: 4.3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 442px) {
+  main .content-section .price-container {
+    flex-direction: column;
+  }
+
+  main .content-section .price-container {
+    align-items: center;
+  }
+}
+
+header nav .navLinks.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+  position: absolute;
+  top: 15rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+header nav .navLinks.active li a {
+  font-size: 3.5rem;
+}
+
+.hidden {
+  display: none;
+}
