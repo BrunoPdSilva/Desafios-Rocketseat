@@ -57,6 +57,10 @@ button {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 /* === HEADER === */
 header {
   width: 100%;
@@ -156,10 +160,27 @@ header nav .openModalBtn img {
   transition: 0.3s;
 }
 
+header nav .navLinks.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+  position: absolute;
+  top: 15rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+header nav .navLinks.active li a {
+  font-size: 3.5rem;
+}
+
 header nav .navLinks li a:hover {
   transition: 0.3s;
   color: rgb(69, 69, 69);
-} 
+}
 
 header nav .bagIcon:hover,
 header nav .navLinks li:hover,
@@ -174,29 +195,29 @@ main {
 }
 
 /* === MAIN SECTION 01 === */
-main .content-section {
+main .productSection {
   width: 40%;
   display: flex;
   align-items: center;
 }
 
-main .content-section .price-container {
+main .productSection .productInfo {
   width: 35.7rem;
   margin-inline: auto;
 }
 
-main .content-section .price-container h1 {
+main .productSection .productInfo h1 {
   margin-bottom: 2.1rem;
 }
 
-main .content-section .price-container p {
+main .productSection .productInfo p {
   margin-block: 2.1rem 3rem;
   font-size: 4rem;
   font-weight: 700;
   line-height: 4.7rem;
 }
 
-main .content-section .price-container button {
+main .productSection .productInfo button {
   width: 27.4rem;
   height: 9rem;
 
@@ -211,12 +232,12 @@ main .content-section .price-container button {
   transition: 0.4s ease;
 }
 
-main .content-section .price-container button:hover {
+main .productSection .productInfo button:hover {
   background-color: #b40303;
 }
 
 /* === MAIN SECTION 02 === */
-main .img-section {
+main .productImages {
   width: 65%;
 
   display: flex;
@@ -232,7 +253,7 @@ main .main-image {
   margin-top: 17.4rem;
 }
 
-main .img-section .images {
+main .productImages .gallery {
   width: 95%;
   margin-bottom: 2rem;
 
@@ -240,18 +261,15 @@ main .img-section .images {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   column-gap: 2rem;
-
-  /*  display: flex;
-  justify-content: space-around;
-  cursor: pointer; */
 }
 
-main .img-section .images img {
+main .productImages .gallery img {
   height: 18.28rem;
   width: 100%;
 }
 
-main .img-section .images img:hover {
+main .productImages .gallery img:hover {
+  cursor: pointer;
   box-shadow: 0 3px red;
   transition: 0.41s ease;
 }
@@ -261,12 +279,10 @@ footer {
   width: 100%;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: repeat(5, 1fr) 2fr;
 }
 
 footer .iframeContainer {
-  width: 100%;
-
   display: flex;
   justify-content: center;
   background-color: #000;
@@ -309,12 +325,11 @@ footer .explore h3 {
   padding-right: 1.4rem;
 }
 
-footer .explore:hover {
-}
-
 footer .explore:hover i {
   animation: toRightArrow 0.5s both;
 }
+
+/* === MEDIAS & ANIMATIONS === */
 
 @keyframes toRightArrow {
   from {
@@ -345,10 +360,9 @@ footer .explore:hover i {
 
 @media (max-width: 730px) {
   header {
-    position: relative;
     margin-bottom: 3rem;
-
     padding-bottom: 2rem;
+    position: relative;
 
     border-bottom: 1px red solid;
   }
@@ -370,25 +384,26 @@ footer .explore:hover i {
     flex-direction: column;
   }
 
-  main .content-section {
+  main .productSection {
     width: 100%;
   }
 
-  main .content-section .price-container {
+  main .productSection .productInfo {
     width: 87%;
-    display: flex;
     margin-inline: auto;
+
+    display: flex;
     gap: 2rem;
   }
 
-  main .content-section .price-container .productInfo {
+  main .productSection .productInfo .buttonContainer {
     display: flex;
     align-items: flex-end;
   }
 
-  main .img-section {
-    margin-top: 3rem;
+  main .productImages {
     width: 100%;
+    margin-top: 3rem;
   }
 
   footer {
@@ -398,42 +413,21 @@ footer .explore:hover i {
 }
 
 @media (max-width: 525px) {
-  main .content-section .price-container {
+  main .productSection .productInfo {
     text-align: center;
   }
-  main .content-section .price-container h1 {
+
+  main .productSection .productInfo h1 {
     font-size: 4.3rem;
-    text-align: center;
   }
 }
 
 @media (max-width: 442px) {
-  main .content-section .price-container {
+  main .productSection .productInfo {
     flex-direction: column;
   }
 
-  main .content-section .price-container {
+  main .productSection .productInfo {
     align-items: center;
   }
-}
-
-header nav .navLinks.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-
-  position: absolute;
-  top: 15rem;
-  left: 50%;
-
-  transform: translateX(-50%);
-}
-
-header nav .navLinks.active li a {
-  font-size: 3.5rem;
-}
-
-.hidden {
-  display: none;
 }
