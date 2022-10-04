@@ -1,11 +1,12 @@
 :root {
   --body-bg-color: #dce4e3;
-  --green: #18c29c;
+  --sidebar-bg: #18c29c;
   --light-green: #8ed7c6;
   --light-grey: #dce4e3;
   --text-color: #084236;
 
   font-size: 62.5%; /* 1rem = 10px */
+  background-color: var(--body-bg-color);
 }
 
 * {
@@ -15,116 +16,98 @@
 
   font-family: "Poppins";
   color: var(--text-color);
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-
-  background-color: var(--body-bg-color);
+  text-decoration: none;
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+
   display: flex;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-
-  padding: 1.8rem;
+input,
+button {
+  background: none;
+  border: none;
+  outline: none;
 }
 
-.sidebar-open h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+button {
+  cursor: pointer;
 }
 
-.sidebar-open p {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.sidebar-open {
+.sidebar {
   width: 25rem;
 
-  background-color: var(--green);
+  background-color: var(--sidebar-bg);
 
   position: relative;
 
-  transition: 0.5s;
+  transition: 0.3s ease;
 }
 
-.sidebar-open header {
-  padding: 2.4rem 1.4rem 2.5rem 2.7rem;
+.sidebar h2 {
+  font-weight: 400;
+}
+
+.sidebar p {
+  font-size: 1.2rem;
+}
+
+.sidebar header {
+  margin: 2.4rem 1.4rem 2.5rem 2.7rem;
 
   display: flex;
   justify-content: space-between;
 }
 
-.sidebar-open header button {
-  background-color: var(--green);
-  border: none;
-  cursor: pointer;
-}
-
-.sidebar-open .search {
+.sidebar main .searchInputGroup {
   width: 22.2rem;
   height: 5.1rem;
-
   margin: 0 auto;
-  position: relative;
 
   display: flex;
   align-items: center;
+  gap: 1.3rem;
+
+  position: relative;
 }
 
-.sidebar-open .search input {
-  width: 22.2rem;
-  height: 5.1rem;
-
+.sidebar main .searchInputGroup input {
+  width: 100%;
+  height: 100%;
   padding-left: 5rem;
 
   font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--text-color);
 
   background-color: var(--light-green);
-  border: none;
-  border-radius: 12px;
-  outline: none;
-
-  transition: 0.5s;
+  border-radius: 1.2rem;
 }
 
-.sidebar-open .search input:focus {
+.sidebar .searchInputGroup input:focus {
   border: 2px solid var(--text-color);
 }
 
-.sidebar-open .search button {
+.sidebar .searchInputGroup button {
   height: 2.4rem;
   width: 2.4rem;
-
-  background-color: var(--light-green);
-  border: none;
-  border-radius: 12px;
+  padding-left: 1.3rem;
 
   position: absolute;
-  left: 13px;
 }
 
-.sidebar-item {
+.sidebar .links li a {
   display: flex;
   align-items: center;
   gap: 1.3rem;
 
   margin: 2rem 0 3.4rem 2.7rem;
 
-  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.sidebar-open footer {
+.sidebar footer {
   width: 100%;
   height: 6rem;
 
@@ -137,62 +120,64 @@ h1 {
   bottom: 0%;
 }
 
-.sidebar-open .vet {
+.sidebar .vetInfo {
   display: flex;
   align-items: center;
   gap: 0.9rem;
 }
 
-.sidebar-open .vet div {
-  margin-top: 0.6rem;
-
-  display: block;
-}
-
-.sidebar-open .vet img {
+.sidebar .vetInfo img {
   width: 4.5rem;
   height: 4.5rem;
 
   border-radius: 1.2rem;
 }
 
-.sidebar-open .vet h2 {
+.sidebar .vetInfo div {
+  margin-top: 0.6rem;
+}
+
+.sidebar .vetInfo div h2 {
   line-height: 1rem;
 }
 
-.sidebar-open footer i {
-  margin: 1.7rem 0 1.8rem;
+.sidebar footer button {
+  margin-block: 1.7rem;
 }
 
-.sidebar-closed {
+.sidebar.closed {
   width: 7.8rem;
 
-  background-color: var(--green);
+  background-color: var(--sidebar-bg);
   position: relative;
 
   transition: 0.5s;
 }
 
-.sidebar-closed .hide {
-  transition: 0.5s;
-  display: none;
-}
-
-.sidebar-closed header {
-  margin-top: 2.6rem;
+.sidebar.closed header {
+  margin-inline: 0;
 
   display: flex;
   justify-content: center;
 }
 
-.sidebar-closed button {
-  background-color: var(--green);
-  border: none;
-
-  cursor: pointer;
+.sidebar.closed h2,
+.sidebar.closed p,
+.sidebar.closed input,
+.sidebar.closed .vetPicture,
+.sidebar.closed i {
+  display: none;
 }
 
-.sidebar-closed .search {
+.sidebar.closed header {
+  margin-top: 2.6rem;
+  padding: 0;
+
+  justify-content: center;
+}
+
+.sidebar.closed .searchInputGroup {
+  width: 100%;
   margin: 2.6rem 0;
 
   display: flex;
@@ -200,31 +185,30 @@ h1 {
   align-items: center;
 }
 
-.sidebar-closed .search button {
+.sidebar.closed .searchInputGroup button {
   width: 5rem;
   height: 5rem;
+  padding-left: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: var(--light-grey);
   border-radius: 12px;
-  border: none;
-
-  cursor: pointer;
+  background-color: var(--body-bg-color);
 }
 
-.sidebar-closed footer {
-  width: 100%;
-  height: 6rem;
-
-  background-color: var(--light-green);
-
-  display: flex;
+.sidebar.closed footer {
   justify-content: center;
-  align-items: center;
+}
 
-  position: absolute;
-  bottom: 0;
+.sidebar li a:hover {
+  transform: scale(1.05);
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+
+  padding: 1.8rem;
 }

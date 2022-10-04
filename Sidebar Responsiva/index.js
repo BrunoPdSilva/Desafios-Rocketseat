@@ -1,16 +1,17 @@
-const sidebar = document.querySelector("#sidebar");
-const toggleButton = document.querySelector("#toggle");
+const sidebar = document.querySelector(".sidebar");
+const toggleButton = document.querySelector("#toggleButton");
+const inputButton = document.querySelector("#inputButton");
+const input = document.querySelector("#input");
 
-function toogleSidebar() {
-  const isSidebarOpen = sidebar.classList.contains("sidebar-open");
-
-  if (isSidebarOpen) {
-    sidebar.classList.remove("sidebar-open");
-    sidebar.classList.add("sidebar-closed");
-  } else {
-    sidebar.classList.add("sidebar-open");
-    sidebar.classList.remove("sidebar-closed");
+function handleClick() {
+  if (sidebar.classList.contains("closed")) {
+    sidebar.classList.toggle("closed");
+    input.focus();
   }
 }
 
-toggleButton.addEventListener("click", toogleSidebar);
+toggleButton.addEventListener("click", () =>
+  sidebar.classList.toggle("closed")
+);
+
+inputButton.addEventListener("click", handleClick);

@@ -1,69 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <title>Desafio - Sidebar Responsiva</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica VET</title>
 </head>
 
 <body>
-  <div class="sidebar-open" id="sidebar">
-
+  <aside class="sidebar">
     <header>
-      <i class="hide"><img src="./images/logo.svg" alt="Logo"></i>
-      <button id="toggle"><img src="./images/menu.svg" alt="Menu"></button>
+      <i><img src="./images/logo.svg" alt="Logo"></i>
+      <button id="toggleButton"><img src="./images/menu.svg" alt="Menu"></button>
     </header>
 
     <main>
-      <div class="sidebar-item search">
-        <button><img src="./images/search.svg" alt="Search"></button>
-        <input type="text" placeholder="Buscar" class="hide">
-      </div>
+      <section class="searchInputGroup">
+        <button id="inputButton"><img src="./images/search.svg" alt="Search"></button>
+        <input id="input" placeholder="Buscar">
+      </section>
 
-      <div class="sidebar-item">
-        <i><img src="./images/grid.svg" alt="Grid icon"></i>
-        <h2 class="hide">Dashboard</h2>
-      </div>
-      <div class="sidebar-item">
-        <i><img src="./images/pet.svg" alt="Pet icon"></i>
-        <h2 class="hide">Pets</h2>
-      </div>
-      <div class="sidebar-item">
-        <i><img src="./images/user.svg" alt="User icon"></i>
-        <h2 class="hide">Clientes</h2>
-      </div>
-      <div class="sidebar-item">
-        <i><img src="./images/vet.svg" alt="Vet icon"></i>
-        <h2 class="hide">Veterinários</h2>
-      </div>
-      <div class="sidebar-item">
-        <i><img src="./images/settings.svg" alt="settings icon"></i>
-        <h2 class="hide">Configurações</h2>
-      </div>
+      <ul class="links">
+        <li>
+          <a href="#">
+            <img src="./images/grid.svg" alt="Grid icon">
+            <h2>Dashboard</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/pet.svg" alt="Pet icon">
+            <h2>Pets</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/user.svg" alt="User icon">
+            <h2>Clientes</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/vet.svg" alt="Vet icon">
+            <h2>Veterinários</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/settings.svg" alt="Settings icon">
+            <h2>Configurações</h2>
+          </a>
+        </li>
+      </ul>
     </main>
 
     <footer>
-      <div class="vet">
-        <img class="hide" src="./images/photo.jpg" alt="Profile Photo" />
-
+      <div class="vetInfo">
+        <img class="vetPicture" src="./images/photo.jpg" alt="Profile Photo" />
         <div>
-          <h2 class="hide">Eleanor Pena</h2>
-          <p class="hide">Veterinária</p>
+          <h2>Eleanor Pena</h2>
+          <p>Veterinária</p>
         </div>
       </div>
 
-      <i><img src="./images/log-out.svg" alt="log-out icon"></i>
+      <button><img src="./images/log-out.svg" alt="log-out icon"></button>
     </footer>
+  </aside>
 
-  </div>
-
-  <h1>Dashboard</h1>
+  <main>
+    <h1>Dashboard</h1>
+  </main>
 
   <script src="./index.js"></script>
 </body>
