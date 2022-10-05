@@ -18,7 +18,8 @@
   list-style: none;
 }
 
-html, body {
+html,
+body {
   width: 100vw;
   height: 100vh;
 
@@ -31,9 +32,7 @@ header {
   width: 100vw;
   height: 50vh;
 
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
 
   text-align: center;
   color: var(--white);
@@ -70,6 +69,12 @@ main.cardContainer {
   border-radius: 8px;
 
   position: relative;
+  transition: 0.3s ease;
+}
+
+.card:nth-child(2) {
+  margin-top: 13.5rem;
+  height: 49rem;
 }
 
 .card .cardHeader h2 {
@@ -78,6 +83,13 @@ main.cardContainer {
   color: var(--priceColor);
 
   margin: 3rem 0 2rem 3rem;
+}
+
+.card:nth-child(2) .cardHeader h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue);
 }
 
 .card .priceContainer {
@@ -89,8 +101,14 @@ main.cardContainer {
 
 .card .priceContainer p {
   padding-right: 0.5rem;
-  
+
   font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--priceColor);
+}
+
+.card:nth-child(2) .priceContainer p {
+  font-size: 3.8rem;
   font-weight: 700;
   color: var(--priceColor);
 }
@@ -131,6 +149,10 @@ main.cardContainer {
   color: var(--gray);
 }
 
+.card:nth-child(2) li span {
+  font-size: 1.6rem;
+}
+
 .card button {
   width: 29.6rem;
   height: 5.1rem;
@@ -145,11 +167,19 @@ main.cardContainer {
 
   border: 1px solid #1d539e;
   border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.card:nth-child(2) {
-  margin-top: 13.5rem;
-  height: 49rem;
+.card:nth-child(2) button {
+  margin: 1rem 3rem;
+
+  font-size: 2rem;
+  color: var(--white);
+
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .card:nth-child(2) .cardHeader {
@@ -164,13 +194,6 @@ main.cardContainer {
   background-color: var(--yellow);
   box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
   border-radius: 8px 8px 0px 0px;
-}
-
-.card:nth-child(2) .cardHeader h2 {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--blue);
 }
 
 .card .popular-tag {
@@ -189,23 +212,16 @@ main.cardContainer {
   color: var(--white);
 }
 
-.card:nth-child(2) .priceContainer p {
-  font-size: 3.8rem;
-  font-weight: 700;
-  color: var(--priceColor);
+.card button:hover {
+  filter: brightness(0.9);
 }
 
-.card:nth-child(2) li span {
-  font-size: 1.6rem;
+.card:nth-child(2) button:hover {
+  filter: brightness(1.2);
 }
 
-.card:nth-child(2) button {
-  margin: 1rem 3rem;
-
-  font-size: 2rem;
-  color: var(--white);
-
-  background-color: var(--blue);
+.card:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width: 1050px) {
@@ -241,17 +257,18 @@ main.cardContainer {
 }
 
 @media (max-width: 650px) {
-  :root {
-    font-size: 40%;
-  }
-
   .card ul {
     margin-left: 2rem;
   }
 }
 
 @media (max-width: 590px) {
+  :root {
+    font-size: 46%;
+  }
+
   main {
+    padding-bottom: 6rem;
     flex-direction: column;
     align-items: center;
   }
@@ -268,23 +285,8 @@ main.cardContainer {
 
   .button-container {
     width: 100%;
-    height: 10rem;
-
-    position: absolute;
-    bottom: 0;
 
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-  }
-
-  .button-container button {
-    position: relative;
-  }
-}
-
-@media (max-width: 370px) {
-  :root {
-    font-size: 35%;
   }
 }
