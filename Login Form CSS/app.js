@@ -1,7 +1,8 @@
 const passwordInput = document.querySelector('input[type="password"]')
 const eye = document.querySelector('#eye');
 
-eye.addEventListener('click', () => {
+eye.addEventListener('click', (e) => {
+  e.preventDefault();
   const inputType = passwordInput.attributes.type.value;
 
   if (inputType === 'password') {
