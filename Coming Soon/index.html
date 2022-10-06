@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coming Soon!</title>
 </head>
 
 <body>
-  <header class="top-background"></header>
+  <header class="background"></header>
 
   <main>
-    <div class="main-container">
+    <section class="clockContainer">
       <h2 class="title">READY TO LAUNCH IN...</h2>
 
-      <div class="clock-container">
-        <div class="unit-container">
+      <div class="clock">
+        <div class="unitContainer">
           <h3>Dias</h3>
           <div>
             <p id="days">00</p>
@@ -28,7 +29,7 @@
           </div>
         </div>
 
-        <div class="unit-container">
+        <div class="unitContainer">
           <h3>Horas</h3>
           <div>
             <p id="hours">00</p>
@@ -36,7 +37,7 @@
           </div>
         </div>
 
-        <div class="unit-container">
+        <div class="unitContainer">
           <h3>Minutos</h3>
           <div>
             <p id="minutes">00</p>
@@ -44,7 +45,7 @@
           </div>
         </div>
 
-        <div class="unit-container">
+        <div class="unitContainer">
           <h3>Segundos</h3>
           <div>
             <p id="seconds">11</p>
@@ -52,22 +53,20 @@
         </div>
       </div>
 
-      <div class="subscribe-container">
+      <div class="subscribeContainer">
         <span class="subscribe">Inscreva-se para saber mais sobre o lançamento</span>
         <button>Inscreva-se</button>
       </div>
+    </section>
 
-    </div>
-
-    <div class="image-container">
+    <section class="imageSection">
       <img src="./images/rocket.svg" alt="Rocket">
-    </div>
+    </section>
   </main>
 
-  <footer class="bottom-background"></footer>
+  <footer class="background"></footer>
 
-    <script src="./app.js"></script>
-
+  <script src="./app.js"></script>
 </body>
 
 </html>

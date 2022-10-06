@@ -4,7 +4,7 @@
   --light-grey: #c8c8c8;
   --text-color: #9c9ab6;
 
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -19,7 +19,7 @@ html {
   width: 100vw;
 }
 
-header.top-background {
+header.background {
   height: 140px;
   width: 1536px;
 
@@ -50,7 +50,7 @@ main {
   align-items: flex-start;
 }
 
-main .main-container {
+main .clockContainer {
   width: 500px;
 
   display: flex;
@@ -58,11 +58,11 @@ main .main-container {
   text-align: center;
 }
 
-main .clock-container {
+main .clockContainer .clock {
   display: flex;
 }
 
-main .unit-container {
+main .clockContainer .clock .unitContainer {
   display: flex;
   flex-direction: column;
 
@@ -70,7 +70,7 @@ main .unit-container {
   
 }
 
-main .unit-container div {
+main .clockContainer .clock .unitContainer div {
   font-size: 72px;
   font-weight: 400;
   color: var(--black);
@@ -79,18 +79,18 @@ main .unit-container div {
   width: 50px;
 }
 
-main .unit-container h3 {
+main .clockContainer .clock .unitContainer h3 {
   font-size: 14px;
   font-weight: 300;
   color: var(--light-grey);  
 }
 
-main .unit-container div p {
+main .clockContainer .clock .unitContainer div p {
   margin-left: 17px;
   padding-right: 11px;
 }
 
-main .subscribe-container {
+main .clockContainer .subscribeContainer {
   margin-top: 30px;
   width: 100%;
 
@@ -99,13 +99,13 @@ main .subscribe-container {
   align-items: center;
 }
 
-main .subscribe {
+main .clockContainer .subscribe {
   font-size: 14px;
   font-weight: 400;
   color: var(--text-color);
 }
 
-main button {
+main .clockContainer button {
   height: 46px;
   width: 160px;
 
@@ -125,19 +125,19 @@ main button {
   cursor: pointer;
 }
 
-main .image-container {
+main .imageSection {
   margin: 0 0px 0 118px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-main .image-container img {
+main .imageSection img {
   width: 607px;
   height: 435px;
 }
 
-footer.bottom-background {
+footer.background {
   height: 229px;
   width: 1536px;
 

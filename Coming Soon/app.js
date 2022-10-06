@@ -3,9 +3,8 @@ const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 
-
 function countdown() {
-  const launchDate = new Date("2022 09 07").getTime();
+  const launchDate = new Date("2023 01 01").getTime();
   const currentDate = new Date().getTime();
 
   const gap = launchDate - currentDate;
@@ -26,7 +25,7 @@ function countdown() {
   secondsElement.innerText = formatTime(textSeconds);
 
   function formatTime(time) {
-    return time < 10 ? `0${time}` : time
+    return time < 10 ? `0${time}` : time;
   }
 }
 
