@@ -138,6 +138,10 @@ footer.background {
   z-index: -1;
 }
 
+footer.background img {
+  width: 100%;
+}
+
 .modal.closed {
   display: none;
 }
@@ -156,7 +160,7 @@ footer.background {
 }
 
 .modal section {
-  width: 40%;
+  width: 60rem;
   height: 16rem;
 
   padding-inline: 2rem;
@@ -167,17 +171,20 @@ footer.background {
 
   background-color: white;
   border-radius: 10px;
+
+  position: relative;
 }
 
-.modal section div {
-  display: flex;
-  justify-content: space-between;
+.modal #closeModal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .modal section div h2 {
-  color: var(--purple);
   font-size: 1.8rem;
   font-weight: 700;
+  color: var(--purple);
 }
 
 .modal section div img {
@@ -188,7 +195,6 @@ footer.background {
 
 .modal section form {
   width: 100%;
-
   margin-top: 3.2rem;
 
   display: flex;
@@ -200,15 +206,10 @@ footer.background {
 .modal form input {
   height: 4.6rem;
   width: 100%;
-
   padding-left: 2rem;
 
   border: 1px solid var(--text-color);
   border-radius: 10px;
-}
-
-footer.background img {
-  width: 100%;
 }
 
 @media (max-width: 1350px) {
@@ -251,19 +252,17 @@ footer.background img {
   div.modal section {
     height: 25rem;
   }
+}
 
-  div.modal section form {
-    flex-direction: column;
+@media (max-width: 550px) {
+  main .imageSection img {
+    width: 50.7rem;
+    height: 33.5rem;
   }
 }
 
 @media (max-width: 470px) {
   :root {
-    font-size: 45%;
-  }
-
-  main .imageSection img {
-    width: 50.7rem;
-    height: 33.5rem;
+    font-size: 37%;
   }
 }
