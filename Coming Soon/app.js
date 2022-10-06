@@ -3,6 +3,11 @@ const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 
+const modal = document.querySelector(".modal");
+const subscribeBtn = document.querySelector("#subscribeBtn");
+const closeModalBtn = document.querySelector("#closeModal");
+const formBtn = document.querySelector("#formBtn");
+
 function countdown() {
   const launchDate = new Date("2023 01 01").getTime();
   const currentDate = new Date().getTime();
@@ -29,4 +34,14 @@ function countdown() {
   }
 }
 
+const toggleModal = () => modal.classList.toggle("closed");
+
 setInterval(countdown, 1000);
+
+subscribeBtn.addEventListener("click", () => toggleModal());
+closeModalBtn.addEventListener("click", () => toggleModal());
+formBtn.addEventListener("click", e => {
+  e.preventDefault();
+
+  toggleModal();
+});

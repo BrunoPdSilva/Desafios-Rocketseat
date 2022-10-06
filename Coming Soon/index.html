@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,48 +14,50 @@
 </head>
 
 <body>
-  <header class="background"></header>
+  <div class="modal closed">
+    <section>
+      <div>
+        <h2>Te manteremos informado(a) sobre o lançamento!</h2>
+        <img id="closeModal" src="./images/cross.svg" alt="">
+      </div>
+
+      <form>
+        <input type="email" placeholder="exemplo@hotmail.com">
+        <button id="formBtn">Cadastrar-se</button>
+      </form>
+    </section>
+  </div>
+
+  <header class="background">
+    <img src="./images/top-image.svg" alt="Top Background">
+  </header>
 
   <main>
     <section class="clockContainer">
       <h2 class="title">READY TO LAUNCH IN...</h2>
 
       <div class="clock">
-        <div class="unitContainer">
-          <h3>Dias</h3>
-          <div>
-            <p id="days">00</p>
-            <span>:</span>
-          </div>
-        </div>
+        <ul>
+          <li>DIAS</li>
+          <li>HORAS</li>
+          <li>MINUTOS</li>
+          <li>SEGUNDOS</li>
+        </ul>
 
-        <div class="unitContainer">
-          <h3>Horas</h3>
-          <div>
-            <p id="hours">00</p>
-            <span>:</span>
-          </div>
-        </div>
-
-        <div class="unitContainer">
-          <h3>Minutos</h3>
-          <div>
-            <p id="minutes">00</p>
-            <span>:</span>
-          </div>
-        </div>
-
-        <div class="unitContainer">
-          <h3>Segundos</h3>
-          <div>
-            <p id="seconds">11</p>
-          </div>
-        </div>
+        <ul>
+          <li id="days"></li>
+          <li>:</li>
+          <li id="hours"></li>
+          <li>:</li>
+          <li id="minutes"></li>
+          <li>:</li>
+          <li id="seconds"></li>
+        </ul>
       </div>
 
       <div class="subscribeContainer">
         <span class="subscribe">Inscreva-se para saber mais sobre o lançamento</span>
-        <button>Inscreva-se</button>
+        <button id="subscribeBtn">Inscreva-se</button>
       </div>
     </section>
 
@@ -64,7 +66,9 @@
     </section>
   </main>
 
-  <footer class="background"></footer>
+  <footer class="background">
+    <img src="./images/bottom-image.svg" alt="Bottom Background">
+  </footer>
 
   <script src="./app.js"></script>
 </body>
