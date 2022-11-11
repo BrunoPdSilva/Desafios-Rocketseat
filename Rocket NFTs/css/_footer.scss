@@ -1,0 +1,144 @@
+footer {
+  width: 100%;
+  background-color: $card-color;
+
+  section:nth-child(1) {
+    height: 22.2rem;
+
+    padding-inline: 8.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 4rem;
+    }
+
+    button {
+      width: 8rem;
+      height: 8rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: $color-logo;
+      border: none;
+
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+  }
+
+  section:nth-child(2) {
+    height: 32rem;
+
+    display: flex;
+    border-block: $border;
+
+    aside:nth-child(1) {
+      width: 54.4rem;
+      padding: 6.7rem 0 0 8.1rem;
+
+      border-right: $border;
+    }
+
+    aside {
+      h4 {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 3.7rem;
+
+        margin-bottom: 2.5rem;
+      }
+
+      .inputGroup {
+        width: 40.2rem;
+        height: 6.6rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        background-color: $color-input;
+
+        input {
+          height: 100%;
+          width: 28rem;
+
+          padding-left: 2rem;
+
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          color: $subtitle-color;
+
+          background: none;
+          border: none;
+          outline: none;
+        }
+
+        button {
+          width: 12.2rem;
+
+          font-size: 2rem;
+          font-weight: 700;
+          color: $black-text;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background-color: $text-color;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+      }
+    }
+
+    .footerLinks {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16rem;
+
+      p {
+        margin-bottom: 0.7rem;
+      }
+
+      li {
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 2rem;
+          color: $subtitle-color;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+
+  section:nth-child(3) {
+    height: 16.7rem;
+    padding-inline: 8.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+
+      li {
+        transition: 0.3s ease;
+      }
+    }
+
+    p {
+      color: $subtitle-color;
+    }
+  }
+}

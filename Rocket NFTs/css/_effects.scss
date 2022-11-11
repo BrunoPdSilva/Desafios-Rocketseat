@@ -1,0 +1,24 @@
+footer section:nth-child(2) .footerLinks li a:hover,
+footer section:nth-child(3) li:hover {
+  filter: brightness(1.5);
+}
+
+footer section:nth-child(1) button:hover,
+header .navbar ul li a:hover,
+footer section:nth-child(2) aside .inputGroup button:hover {
+  filter: brightness(0.8);
+}
+
+header .gallery img:hover,
+main.contentSection3 a:hover {
+  transform: scale(1.05);
+}
+
+main.contentSection3 section .card:hover {
+  transform: scale(1.02);
+}
+
+main.contentSection2 section aside .card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}

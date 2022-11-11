@@ -1,0 +1,74 @@
+main.contentSection2 {
+  margin: 15rem 8.7rem;
+
+  h2 {
+    line-height: 6.1rem;
+    margin-bottom: 15.8rem;
+  }
+
+  section {
+    display: flex;
+
+    aside {
+      flex: 1;
+
+      .card:nth-child(1) {
+        margin-bottom: 5rem;
+      }
+
+      .card {
+        width: 35rem;
+        height: 33.7rem;
+      
+        transition: 0.3s ease;
+
+        .cardTitle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h3 {
+            font-size: 3rem;
+            font-weight: 500;
+          }
+
+          i img {
+            width: 2rem;
+            height: 2rem;
+          
+            cursor: pointer;
+            transition: 0.3s ease;
+          }
+        }
+
+        .cardSubtitle {
+          display: flex;
+          justify-content: space-between;
+        
+          margin-block: 4.4rem 2.6rem;
+
+          p {
+            font-weight: 600;
+            color: $subtitle-color;
+          }
+
+          span {
+            font-size: 2rem;
+          }
+        }
+
+        img.popularPicture {
+          width: 100%;
+        }
+      }
+    }
+
+    aside:nth-child(1) {
+      border-right: $border;
+    }
+
+    aside:nth-child(2) .card {
+      margin-left: auto;
+    }
+  }
+}

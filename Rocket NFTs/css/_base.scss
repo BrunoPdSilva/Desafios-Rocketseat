@@ -1,0 +1,45 @@
+$body-background: #0e0e0e;
+$color-logo: #ff5b50;
+$card-color: #252525;
+$text-color: #fff;
+$subtitle-color: #5a5757;
+$black-text: #000;
+$color-input: #0d0d0d;
+$border: 1px solid #5a5757;
+
+:root {
+  font-size: 62.5%;
+  background-color: $body-background;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+
+  color: $text-color;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+}
+
+span {
+  color: $color-logo;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2rem;
+}

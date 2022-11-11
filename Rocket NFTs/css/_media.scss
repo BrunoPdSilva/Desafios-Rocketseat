@@ -55,106 +55,108 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-  }
 
-  header main h1 {
-    width: 100%;
-  }
+    h1 {
+      width: 100%;
+    }
 
-  header main section:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+    section:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
 
-  header main section:nth-child(1) p {
-    width: 40rem;
+      p {
+        width: 40rem;
+      }
+    }
   }
 
   main.contentSection1 {
     height: auto;
     display: block;
-  }
 
-  main.contentSection1 aside {
-    width: 100%;
-    height: 20rem;
+    aside {
+      width: 100%;
+      height: 20rem;
 
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
 
-    border-right: none;
-    border-bottom: var(--border);
-  }
+      border-right: none;
+      border-bottom: $border;
+    }
 
-  main.contentSection1 section div.articleContainer {
-    height: 50rem;
-  }
+    section div.articleContainer {
+      height: 50rem;
 
-  main.contentSection1 section div.articleContainer article {
-    flex-direction: column;
-    align-items: center;
-  }
+      article {
+        flex-direction: column;
+        align-items: center;
 
-  main.contentSection1 section div.articleContainer article div {
-    width: 80%;
-  }
+        div {
+          width: 80%;
 
-  main.contentSection1 section div.articleContainer article div p {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+          p {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
   }
 
   footer section:nth-child(2) {
     height: auto;
     flex-direction: column;
-  }
 
-  footer section:nth-child(2) aside:nth-child(1) {
-    width: 100%;
+    aside:nth-child(1) {
+      width: 100%;
 
-    padding-inline: 0;
-    padding-bottom: 6rem;
+      padding-inline: 0;
+      padding-bottom: 6rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    border-right: none;
-  }
+      border-right: none;
+    }
 
-  footer section:nth-child(2) .footerLinks {
-    width: 100%;
+    .footerLinks {
+      width: 100%;
 
-    display: flex;
-    justify-content: center;
-    padding-block: 3rem;
-    border-top: var(--border);
+      display: flex;
+      justify-content: center;
+      padding-block: 3rem;
+      border-top: $border;
+    }
   }
 }
 
 @media (max-width: 680px) {
-  header nav ul.desktopLinks {
-    display: none;
-  }
+  header {
+    nav ul.desktopLinks {
+      display: none;
+    }
 
-  header .mobileLinks {
-    display: flex;
-    justify-content: center;
-    gap: 20%;
+    .mobileLinks {
+      display: flex;
+      justify-content: center;
+      gap: 20%;
 
-    padding-top: 3rem;
-  }
+      padding-top: 3rem;
 
-  header .mobileLinks a {
-    font-size: 1.8rem;
-    transition: 0.3s ease;
-  }
+      a {
+        font-size: 1.8rem;
+        transition: 0.3s ease;
+      }
+    }
 
-  header main {
-    margin-top: 6rem;
+    main {
+      margin-top: 6rem;
+    }
   }
 
   footer section:nth-child(1) {
@@ -165,14 +167,14 @@
 @media (max-width: 580px) {
   main.contentSection2 {
     margin-inline: 2rem;
-  }
 
-  main.contentSection2 section aside {
-    height: 67rem;
-  }
+    section aside {
+      height: 67rem;
 
-  main.contentSection2 section aside .card {
-    width: 27rem;
+      .card {
+        width: 27rem;
+      }
+    }
   }
 
   main.contentSection3 section {
@@ -187,15 +189,15 @@
     align-items: center;
 
     margin-bottom: 1rem;
-  }
 
-  header main section:nth-child(1) p {
-    width: 90%;
-    margin-bottom: 2.5rem;
-  }
+    p {
+      width: 90%;
+      margin-bottom: 2.5rem;
+    }
 
-  header main section:nth-child(1) .artists {
-    height: 11rem;
+    .artists {
+      height: 11rem;
+    }
   }
 
   footer section:nth-child(3) {

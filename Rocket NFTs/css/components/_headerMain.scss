@@ -1,0 +1,44 @@
+header main {
+  display: flex;
+  justify-content: space-between;
+
+  margin-block: 9.8rem 10rem;
+
+  img.badge {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  section:nth-child(1) {
+    width: 40.1rem;
+
+    p {
+      font-size: 1.8rem;
+
+      margin-bottom: 5.5rem;
+    }
+
+    .artists {
+      width: 36.9rem;
+      height: 8.7rem;
+
+      display: flex;
+      gap: 0.5rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 4.2rem;
+
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  h1 {
+    width: 59.6rem;
+
+    font-size: 5rem;
+  }
+}
