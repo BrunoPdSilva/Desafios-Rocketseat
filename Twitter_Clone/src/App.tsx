@@ -11,14 +11,11 @@ import {
 } from "phosphor-react";
 
 import Person1 from "./assets/Person1.png";
-import Person2 from "./assets/Person2.png";
-import Person3 from "./assets/Person3.png";
-import Person4 from "./assets/Person4.png";
-import Person5 from "./assets/Person5.png";
-import Person6 from "./assets/Person6.png";
 
 import Logo from "./assets/logo.svg";
 import { NavItem } from "./components/NavItem";
+import { Tweet } from "./components/Tweet";
+import { tweets } from "./data/tweetsData";
 
 export function App() {
   return (
@@ -65,6 +62,11 @@ export function App() {
             </div>
           </div>
         </header>
+        <div className="w-full h-3 bg-blue-100"></div>
+
+        {tweets.map(({ user, image, name, text }) => (
+          <Tweet key={user} image={image} name={name} user={user} text={text} />
+        ))}
       </main>
     </div>
   );
