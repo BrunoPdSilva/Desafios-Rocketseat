@@ -2,7 +2,7 @@ import { ElementType } from "react";
 
 interface TweetActionProps {
   label: string;
-  icon: ElementType
+  icon: ElementType;
 }
 
 export function TweetAction({ icon: Icon, label }: TweetActionProps) {
