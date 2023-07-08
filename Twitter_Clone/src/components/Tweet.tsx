@@ -1,39 +1,23 @@
-import { ChatCircle, ArrowsClockwise, Heart } from "phosphor-react";
-import { TweetAction } from "./TweetAction";
-import TextareaAutosize from "react-textarea-autosize";
+import Person1 from "../assets/Person1.png";
 
-interface TweetProps {
-  name: string;
-  user: string;
-  text: string;
-  image: string;
-}
-
-export function Tweet({ name, user, image, text }: TweetProps) {
+export function Tweet() {
   return (
-    <section className="w-full border-y-[1px] border-blue-100 dark:border-gray-200 px-5 py-6 flex gap-3">
-      <img src={image} alt="User Picture" className="w-14 rounded-full h-14" />
-
-      <div className="flex flex-col gap-2 w-full">
-        <h2 className="text-base text-blue-400 leading-[160%] font-bold me-1 dark:text-white">
-          {name}{" "}
-          <span className="text-sm text-blue-200 font-medium dark:text-gray-100">
-            {user}
-          </span>
-        </h2>
-
-        <TextareaAutosize
-          value={text}
-          className="resize-none outline-none bg-white dark:bg-gray-400 text-black dark:text-gray-50"
-          readOnly
+    <div className="h-[9.5rem] px-5 py-6 border-y-[1px] border-blue-100 dark:border-gray-200">
+      <div className="flex items-center gap-3 mb-2">
+        <img
+          src={Person1}
+          alt="User Picture"
+          className="w-14 aspect-square rounded-full"
         />
-
-        <footer className="h-9 pt-3 flex gap-12">
-          <TweetAction icon={ChatCircle} label="32" />
-          <TweetAction icon={ArrowsClockwise} label="16" />
-          <TweetAction icon={Heart} label="28" />
-        </footer>
+        <p className="text-xl font-medium text-blue-300 dark:text-gray-100">
+          What's happening?
+        </p>
       </div>
-    </section>
+      <div className="flex justify-end">
+        <button className="px-6 py-4 bg-primary text-base font-bold text-white rounded-full ml-auto leading-none">
+          Post
+        </button>
+      </div>
+    </div>
   );
 }

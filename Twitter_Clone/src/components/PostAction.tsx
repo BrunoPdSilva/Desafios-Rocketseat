@@ -5,7 +5,7 @@ interface TweetActionProps {
   icon: ElementType;
 }
 
-export function TweetAction({ icon: Icon, label }: TweetActionProps) {
+export function PostAction({ icon: Icon, label }: TweetActionProps) {
   return (
     <button className="flex gap-2 text-blue-200">
       <Icon size={24} />

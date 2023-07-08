@@ -4,7 +4,7 @@ import Person4 from "../assets/Person4.png";
 import Person5 from "../assets/Person5.png";
 import Person6 from "../assets/Person6.png";
 
-export const tweets = [
+export const posts = [
   {
     image: Person2,
     name: "John Travolta",

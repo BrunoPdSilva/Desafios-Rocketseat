@@ -6,7 +6,7 @@ interface NavItemProps {
   active?: boolean;
 }
 
-export function NavItem({ icon: Icon, label, active }: NavItemProps) {
+export function AsideItem({ icon: Icon, label, active }: NavItemProps) {
   return (
     <li
       className={`flex items-center gap-5 font-bold text-xl ${
