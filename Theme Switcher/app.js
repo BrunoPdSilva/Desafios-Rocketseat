@@ -47,7 +47,6 @@ function isThemeEqual(firstTheme, secondTheme) {
   return false
 }
 
-
 checkbox.addEventListener('change', ({ target }) => 
   target.checked ? changeTheme(lightTheme) : changeTheme(darkTheme)
 )

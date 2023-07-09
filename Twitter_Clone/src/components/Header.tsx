@@ -7,7 +7,7 @@ const saveTheme = (theme: string) => {
 
 const retrieveTheme = () => {
   const theme = localStorage.getItem("theme");
-  return theme ? "dark" : "";
+  return theme === "dark" ? "dark" : "light";
 };
 
 export function Header() {
